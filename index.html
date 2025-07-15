@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chomene Investment Limited</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Add Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    /* Additional inline styles for vibrancy and layout */
+    .features-grid {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+    .feature-box {
+      background: #f0faff;
+      border-radius: 12px;
+      padding: 2rem;
+      flex: 1 1 300px;
+      max-width: 320px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgb(0 123 255 / 0.15);
+      transition: transform 0.3s ease;
+    }
+    .feature-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgb(0 123 255 / 0.3);
+    }
+    .feature-icon {
+      font-size: 4rem;
+      color: #007bff;
+      margin-bottom: 1rem;
+    }
+    .about-preview {
+      background: #e6f0ff;
+      border-radius: 15px;
+      padding: 3rem 2rem;
+      margin-bottom: 3rem;
+      box-shadow: 0 8px 30px rgb(0 123 255 / 0.1);
+      text-align: center;
+    }
+    .btn-primary, .btn-secondary {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.8rem 2.2rem;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      color: white;
+      box-shadow: 0 5px 15px rgb(0 123 255 / 0.4);
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+    .btn-secondary {
+      background-color: transparent;
+      color: #007bff;
+      border: 2px solid #007bff;
+      box-shadow: none;
+    }
+    .btn-secondary:hover {
+      background-color: #007bff;
+      color: white;
+    }
+    footer {
+      background-color: #003366;
+      color: white;
+      padding: 1.5rem 0;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="main-header">
+    <div class="container header-container">
+      <h1 class="logo">Chomene Investment Limited</h1>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Your One-Stop Solution for Construction, Auto, and IT Services</h2>
+      <p class="hero-subtext">
+        At Chomene Investment Limited, we blend quality, expertise, and innovation to meet your diverse needs—whether building, maintaining vehicles, or navigating the digital world.
+      </p>
+      <a href="services.html" class="btn-primary" aria-label="Explore our services">Explore Our Services</a>
+    </div>
+  </section>
+
+  <section class="features container" aria-label="Our main service offerings">
+    <div class="features-grid">
+      <article class="feature-box" tabindex="0" aria-labelledby="construction-title" aria-describedby="construction-desc">
+        <i class="fa-solid fa-hard-hat feature-icon" aria-hidden="true"></i>
+        <h3 id="construction-title">Construction Materials</h3>
+        <p id="construction-desc">
+          We supply durable, affordable, and certified materials like cement, steel, and aggregates to support your building projects from foundation to finish.
+        </p>
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=320&q=80" alt="Construction site with materials and workers" style="width:100%; border-radius: 8px; margin-top:1rem;" />
+      </article>
+
+      <article class="feature-box" tabindex="0" aria-labelledby="vehicle-title" aria-describedby="vehicle-desc">
+        <i class="fa-solid fa-car-wrench feature-icon" aria-hidden="true"></i>
+        <h3 id="vehicle-title">Vehicle Repairs & Maintenance</h3>
+        <p id="vehicle-desc">
+          Our experienced mechanics provide thorough diagnostics, repairs, and scheduled servicing to keep your vehicles running safely and efficiently.
+        </p>
+        <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=320&q=80" alt="Mechanic repairing a car engine" style="width:100%; border-radius: 8px; margin-top:1rem;" />
+      </article>
+
+      <article class="feature-box" tabindex="0" aria-labelledby="it-title" aria-describedby="it-desc">
+        <i class="fa-solid fa-laptop-code feature-icon" aria-hidden="true"></i>
+        <h3 id="it-title">IT Solutions</h3>
+        <p id="it-desc">
+          Offering cutting-edge web development, network installation, and IT consulting to empower your business and personal tech needs.
+        </p>
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=320&q=80" alt="Person coding on a laptop with multiple screens" style="width:100%; border-radius: 8px; margin-top:1rem;" />
+      </article>
+    </div>
+  </section>
+
+  <section class="about-preview container" aria-label="Why choose Chomene Investment Limited">
+    <h2>Why Choose Chomene Investment Limited?</h2>
+    <p>
+      Our commitment to quality and customer satisfaction makes us your trusted partner. We bring versatile expertise and reliable service, all under one roof to fulfill your varied needs.
+    </p>
+    <a href="about.html" class="btn-secondary" aria-label="Learn more about Chomene Investment Limited">Learn More</a>
+  </section>
+
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2025 Chomene Investment Limited. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
