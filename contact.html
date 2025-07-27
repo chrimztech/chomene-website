@@ -1,55 +1,471 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact - Chomene Investment Limited</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact - Chomene Investment Limited</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafd; /* Light background for the page */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 1.5rem;
+        }
+
+        h1, h2, h3 {
+            color: #003366; /* Your primary dark blue */
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        /* Header (consistent with index.html & about.html) */
+        .main-header {
+            background-color: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            margin: 0;
+            color: #003366;
+            text-decoration: none;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        /* Navigation (consistent with index.html & about.html) */
+        .nav-links {
+            display: flex;
+            gap: 1.8rem;
+        }
+
+        .nav-links a {
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.5rem 0;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background-color: #007bff;
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        /* Mobile Navigation (consistent with about.html) */
+        .menu-btn {
+            display: none; /* Hidden by default */
+            background: none;
+            border: none;
+            font-size: 1.8rem;
+            color: #0056b3;
+            cursor: pointer;
+        }
+
+        /* Main Section Padding */
+        main {
+            padding-top: 2rem;
+            padding-bottom: 4rem;
+        }
+
+        /* Contact Page Specific Styles */
+        .contact-page {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem; /* Space between intro and form */
+        }
+
+        .contact-intro {
+            background-color: #e6f0ff; /* Light blue background */
+            padding: 3rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 123, 255, 0.08);
+            border-bottom: 5px solid #007bff; /* Accent border */
+        }
+
+        .contact-intro h2 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            color: #003366;
+        }
+
+        .contact-intro p {
+            font-size: 1.1rem;
+            color: #444;
+            max-width: 700px;
+            margin: 0 auto 1rem auto;
+        }
+
+        .contact-intro strong {
+            color: #003366;
+            font-weight: 600;
+            display: block; /* Each contact detail on a new line */
+            margin-top: 0.5rem;
+        }
+        .contact-intro strong:first-of-type {
+            margin-top: 1.5rem; /* More space before first detail */
+        }
+
+
+        /* Contact Form */
+        .contact-form-section {
+            background-color: #ffffff;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .contact-form .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 0.6rem;
+            font-weight: 600;
+            color: #003366;
+            font-size: 1rem;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            color: #333;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-form input[type="text"]:focus,
+        .contact-form input[type="email"]:focus,
+        .contact-form textarea:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+            outline: none;
+        }
+
+        .contact-form textarea {
+            resize: vertical; /* Allow vertical resizing */
+            min-height: 120px;
+        }
+
+        /* Buttons (consistent with index.html) */
+        .btn-primary {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 0.9rem 2.5rem;
+            border-radius: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            font-size: 1.1rem;
+            background-color: #007bff; /* Primary blue for submit */
+            color: #ffffff;
+            box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            box-shadow: 0 10px 25px rgba(0, 123, 255, 0.5);
+            transform: translateY(-3px);
+        }
+
+        /* Footer (consistent with index.html & about.html) */
+        footer {
+            background-color: #003366;
+            color: white;
+            padding: 2.5rem 0;
+            text-align: center;
+            font-size: 0.95rem;
+            margin-top: 3rem;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .footer-nav {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .footer-nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-nav a:hover {
+            color: #007bff;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 0.8rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #007bff;
+        }
+
+        /* Responsive Design (consistent with index.html & about.html) */
+        @media (max-width: 768px) {
+            /* Header adjustments */
+            .header-container {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 1.5rem;
+            }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background: #002244;
+                width: 100%;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                padding: 1rem 0;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+                align-items: center;
+                border-top: 1px solid rgba(255,255,255,0.1);
+            }
+            .nav-links.open {
+                display: flex;
+            }
+            .nav-links a {
+                color: white;
+                padding: 0.8rem 1rem;
+                width: 100%;
+                text-align: center;
+            }
+             .nav-links a::after {
+                display: none;
+            }
+            .nav-links a:hover {
+                background-color: #004080;
+            }
+            .menu-btn {
+                display: block;
+            }
+
+            /* Main content adjustments */
+            h2 {
+                font-size: 2rem;
+            }
+            .contact-intro {
+                padding: 2rem;
+            }
+            .contact-intro h2 {
+                font-size: 2.2rem;
+            }
+            .contact-form-section {
+                padding: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 1.5rem;
+            }
+            .menu-btn {
+                font-size: 1.6rem;
+            }
+            h2 {
+                font-size: 1.8rem;
+            }
+            .contact-intro h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="container header-container">
-      <h1 class="logo">Chomene Investment Limited</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="about.html">About Us</a>
-        <a class="active" href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="container contact-page">
-    <section class="contact-intro">
-      <h2>Get in Touch</h2>
-      <p>Have questions or need a quote? We'd love to hear from you.</p>
-      <p><strong>Email:</strong> info@chomeneinvestment.limited.com<br />
-         <strong>Phone:</strong> +260 976 911 338</p>
-    </section>
-
-    <section class="contact-form-section">
-      <form id="contactForm" class="contact-form">
-        <div class="form-group">
-          <label for="name">Your Name</label>
-          <input type="text" id="name" name="name" placeholder="Enter your name" required />
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo-container">
+                <a href="index.html" class="logo" aria-label="Chomene Investment Limited Home">
+                    <img src="images/logo.jpg" alt="Chomene Investment Limited Logo" />
+                    Chomene Investment Limited
+                </a>
+            </div>
+            <button id="menu-toggle" class="menu-btn" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About Us</a>
+                <a class="active" href="contact.html">Contact</a>
+            </nav>
         </div>
-        <div class="form-group">
-          <label for="email">Your Email</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email" required />
-        </div>
-        <div class="form-group">
-          <label for="message">Your Message</label>
-          <textarea id="message" name="message" placeholder="Type your message..." rows="5" required></textarea>
-        </div>
-        <button type="submit" class="btn-primary">Send Message</button>
-      </form>
-    </section>
-  </main>
+    </header>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Chomene Investment Limited. All rights reserved.</p>
-    </div>
-  </footer>
+    <main class="container contact-page">
+        <section class="contact-intro">
+            <h2>Get in Touch</h2>
+            <p>Have questions or need a quote? We'd love to hear from you. Reach out to us through the form below or directly via:</p>
+            <p>
+                <strong>Email:</strong> <a href="mailto:info@chomeneinvestment.limited.com">info@chomeneinvestment.limited.com</a><br />
+                <strong>Phone:</strong> <a href="tel:+260976911338">+260 976 911 338</a>
+            </p>
+            <p>Our team is available to assist you Monday to Friday, 8:00 AM - 5:00 PM CAT.</p>
+        </section>
+
+        <section class="contact-form-section">
+            <h2>Send Us a Message</h2>
+            <form id="contactForm" class="contact-form" action="#" method="POST"> <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="What is your message about?" required />
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" placeholder="Type your detailed message here..." rows="7" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </section>
+
+        <section class="location-map-section">
+            <h2>Our Location</h2>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3849.522204561081!2d28.2818956!3d-15.387518499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x194098939c065f4d%3A0xc3f17d3b50c0c6d7!2sLusaka!5e0!3m2!1sen!2szm!4v1701388484179!5m2!1sen!2szm"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    title="Map showing our location in Lusaka, Zambia">
+                </iframe>
+            </div>
+            <p class="address-text">Find us at: [Your Physical Address Here], Lusaka, Zambia</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2025 Chomene Investment Limited. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script defer>
+        // Simple nav toggle (copied from about.html for consistency)
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuBtn = document.getElementById('menu-toggle');
+            const nav = document.querySelector('.nav-links');
+            menuBtn.addEventListener('click', () => {
+                nav.classList.toggle('open');
+            });
+
+            // Optional: Form submission handler (for demonstration)
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(event) {
+                    event.preventDefault(); // Prevent default form submission
+                    alert('Thank you for your message! We will get back to you soon.');
+                    // In a real application, you would send this data to a server
+                    // using fetch API or XMLHttpRequest here.
+                    contactForm.reset(); // Clear the form after submission
+                });
+            }
+        });
+    </script>
 </body>
 </html>
