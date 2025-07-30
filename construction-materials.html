@@ -2,42 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Services - Chomene Investment Limited</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Construction Materials Supply - Chomene Investment Limited</title>
     <link rel="stylesheet" href="styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <style>
-        /* Reset and Base Styles (consistent across all pages) */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        /* General Body and Typography */
         body {
             font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
             background-color: #f8fafd; /* Light background for the page */
             color: #333;
-            line-height: 1.6;
         }
 
-        /* Container (consistent across all pages) */
         .container {
-            width: 90%;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 1rem 1.5rem;
+            padding: 0 1.5rem;
         }
 
         h1, h2, h3 {
-            color: #003366; /* Your primary dark blue */
+            color: #003366;
             font-weight: 700;
         }
 
         h2 {
             font-size: 2.5rem;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
             text-align: center;
         }
 
@@ -45,7 +39,7 @@
             margin-bottom: 1rem;
         }
 
-        /* Header (consistent with other pages) */
+        /* Header */
         .main-header {
             background-color: #fff;
             padding: 1rem 0;
@@ -78,12 +72,11 @@
         }
 
         .logo img {
-            height: 120px; /* Adjust as needed for your logo */
+            height: 120px;
             width: 120px;
             margin-right: 10px;
         }
 
-        /* Navigation (consistent with other pages) */
         .nav-links {
             display: flex;
             gap: 1.8rem;
@@ -114,9 +107,9 @@
             width: 100%;
         }
 
-        /* Mobile Navigation (consistent with other pages) */
+        /* Mobile Menu Button */
         .menu-btn {
-            display: none; /* Hidden by default */
+            display: none; /* Hidden by default on desktop */
             background: none;
             border: none;
             font-size: 1.8rem;
@@ -124,81 +117,134 @@
             cursor: pointer;
         }
 
-        /* Main Section Padding (consistent) */
-        main {
-            padding-top: 2rem;
-            padding-bottom: 4rem;
-        }
-
-        /* Services Grid Layout */
-        .services-grid {
-            display: grid; /* Changed to CSS Grid for better control */
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive columns */
-            gap: 2.5rem; /* Increased gap */
-            justify-content: center; /* Center cards horizontally */
-            align-items: stretch; /* Make cards same height */
-        }
-
-        /* Service Card Styling */
-        .service-card-link { /* New wrapper for the clickable area */
-            text-decoration: none; /* Remove underline from link */
-            color: inherit; /* Inherit text color */
-            display: block; /* Make the entire card clickable */
-            height: 100%; /* Important for grid alignment */
-        }
-
-        .service-card {
-            background: #ffffff; /* White background for cards */
-            padding: 2.5rem; /* More padding */
-            border-radius: 15px; /* Softer rounded corners */
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Stronger but softer shadow */
+        /* Main Content Specific Styles */
+        .service-detail-section {
+            padding: 4rem 0;
             text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-detail-section h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-detail-section .intro-text {
+            font-size: 1.2rem;
+            max-width: 900px;
+            margin: 0 auto 3rem auto;
+            color: #555;
+        }
+
+        .detail-content {
             display: flex;
             flex-direction: column;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .detail-block {
+            background-color: #ffffff;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            text-align: left;
+            display: flex;
             align-items: center;
-            border-bottom: 5px solid #007bff; /* Add an accent border */
-            height: 100%; /* Ensure cards stretch to fill grid height */
+            gap: 2rem;
+            flex-wrap: wrap; /* Allow content to wrap on smaller screens */
         }
 
-        .service-card:hover {
-            transform: translateY(-8px); /* Slightly less aggressive lift */
-            box-shadow: 0 15px 40px rgba(0, 123, 255, 0.25); /* More pronounced hover shadow */
+        .detail-block:nth-child(even) {
+            flex-direction: row-reverse; /* Alternate image/text on even blocks */
         }
 
-        .service-icon {
-            font-size: 4.5rem; /* Slightly larger icon */
-            color: #007bff;
-            margin-bottom: 1.5rem; /* More space below icon */
+        .detail-block-text {
+            flex: 1;
+            min-width: 300px; /* Ensure text doesn't get too narrow */
         }
 
-        .service-card h3 {
-            font-size: 1.8rem; /* Larger heading */
-            color: #003366;
+        .detail-block h3 {
+            font-size: 2rem;
             margin-bottom: 1rem;
+            color: #007bff;
         }
 
-        .service-card p {
+        .detail-block p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .detail-block ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1.5rem;
+        }
+
+        .detail-block ul li {
             font-size: 1rem;
-            color: #555;
-            flex-grow: 1; /* Allow text to take up available space, pushing image to bottom */
-            margin-bottom: 1.5rem; /* Space before image */
+            margin-bottom: 0.8rem;
+            padding-left: 1.8rem;
+            position: relative;
+            color: #444;
         }
 
-        .service-image {
+        .detail-block ul li::before {
+            content: "\f00c"; /* Font Awesome check icon */
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: #28a745; /* Green checkmark */
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .detail-block img {
+            max-width: 400px;
             width: 100%;
-            height: 180px; /* Fixed height for consistent image size */
-            object-fit: cover; /* Ensure image covers the area without distortion */
-            border-radius: 10px; /* Softer rounded corners for images */
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Clearer image shadow */
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
         }
 
-        /* Page Title */
-        .page-title {
+        .cta-section {
+            background-color: #007bff;
+            color: white;
+            padding: 4rem 2rem;
             text-align: center;
-            color: #003366;
-            font-size: 3rem; /* Larger, more impactful title */
-            margin-bottom: 3.5rem; /* More space below title */
+            border-radius: 15px;
+            margin-top: 4rem;
+        }
+
+        .cta-section h2 {
+            color: white;
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-section p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 2.5rem auto;
+        }
+
+        .btn-contact {
+            display: inline-block;
+            background-color: white;
+            color: #007bff;
+            padding: 1rem 3rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-contact:hover {
+            background-color: #e0f2ff;
+            color: #0056b3;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
         }
 
         /* Footer (consistent with other pages) */
@@ -250,9 +296,8 @@
             color: #007bff;
         }
 
-        /* Responsive Design (consistent with other pages) */
+        /* Responsive Design */
         @media (max-width: 768px) {
-            /* Header adjustments */
             .header-container {
                 flex-direction: row;
                 justify-content: space-between;
@@ -299,22 +344,42 @@
                 display: block;
             }
 
-            /* Main content adjustments */
-            .page-title {
-                font-size: 2.2rem;
-                margin-bottom: 2.5rem;
+            /* Service Detail Page Responsive */
+            .service-detail-section h1 {
+                font-size: 2.5rem;
             }
-            .services-grid {
-                grid-template-columns: 1fr; /* Single column on small screens */
+            .service-detail-section .intro-text {
+                font-size: 1rem;
             }
-            .service-card {
+            .detail-block {
+                flex-direction: column; /* Stack image and text vertically */
                 padding: 2rem;
             }
-            .service-icon {
-                font-size: 4rem;
+            .detail-block:nth-child(even) {
+                flex-direction: column; /* Also stack for even blocks */
             }
-            .service-card h3 {
+            .detail-block-text {
+                min-width: unset; /* Remove min-width on small screens */
+            }
+            .detail-block img {
+                max-width: 100%;
+                margin-top: 1.5rem; /* Add space when stacked */
+            }
+            .detail-block h3 {
                 font-size: 1.6rem;
+            }
+            .detail-block p {
+                font-size: 1rem;
+            }
+            .cta-section {
+                padding: 3rem 1rem;
+            }
+            .cta-section h2 {
+                font-size: 2rem;
+            }
+            .btn-contact {
+                padding: 0.8rem 2.5rem;
+                font-size: 1rem;
             }
         }
 
@@ -325,17 +390,21 @@
             .menu-btn {
                 font-size: 1.6rem;
             }
-            .page-title {
-                font-size: 1.8rem;
+            .nav-links {
+                gap: 0.5rem;
             }
-            .service-card {
+
+            .service-detail-section h1 {
+                font-size: 2rem;
+            }
+            .detail-block {
                 padding: 1.5rem;
             }
-            .service-icon {
-                font-size: 3.5rem;
-            }
-            .service-card h3 {
+            .detail-block h3 {
                 font-size: 1.4rem;
+            }
+            .detail-block ul li {
+                font-size: 0.9rem;
             }
         }
     </style>
@@ -354,79 +423,63 @@
             </button>
             <nav class="nav-links">
                 <a href="index.html">Home</a>
-                <a class="active" href="services.html">Services</a>
+                <a href="services.html">Services</a>
                 <a href="about.html">About Us</a>
                 <a href="contact.html">Contact</a>
             </nav>
         </div>
     </header>
 
-    <main class="container" aria-label="Our services offered by Chomene Investment Limited">
-        <h2 class="page-title">Our Comprehensive Services</h2>
+    <main class="container">
+        <section class="service-detail-section">
+            <h1>Construction Materials Supply</h1>
+            <p class="intro-text">
+                Chomene Investment Limited is your reliable partner for all your construction material needs. We supply a comprehensive range of high-quality, certified materials sourced from reputable manufacturers, ensuring the strength and longevity of your projects.
+            </p>
 
-        <section class="services-grid">
-            <a href="construction-materials.html" class="service-card-link" aria-label="Learn more about Construction Materials Supply">
-                <article class="service-card" tabindex="0" aria-labelledby="supply-title" aria-describedby="supply-desc">
-                    <i class="fas fa-truck-loading service-icon" aria-hidden="true"></i>
-                    <h3 id="supply-title">Construction Materials Supply</h3>
-                    <p id="supply-desc">
-                        We provide a reliable supply of high-quality construction materials, from cement and aggregates to steel and timber, ensuring your project has everything it needs, on time and within budget.
-                    </p>
-                    <img
-                        src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=320&h=180&q=80"
-                        alt="Truck unloading construction materials at a building site"
-                        class="service-image"
-                    />
-                </article>
-            </a>
+            <div class="detail-content">
+                <div class="detail-block">
+                    <div class="detail-block-text">
+                        <h3>Our Extensive Product Range</h3>
+                        <p>We stock a wide variety of essential construction materials to cater to projects of all scales, from small residential builds to large commercial developments.</p>
+                        <ul>
+                            <li>Reinforcement Steel Bars (Rebar)</li>
+                            <li>Cement (various grades and types)</li>
+                            <li>Aggregates (sand, gravel, crushed stone)</li>
+                            <li>Bricks and Blocks (concrete, burnt clay, hollow)</li>
+                            <li>Roofing Materials (iron sheets, tiles)</li>
+                            <li>Electrical and Plumbing Fittings</li>
+                            <li>Timber and Lumber products</li>
+                            <li>Paints and Finishes</li>
+                            <li>And much more!</li>
+                        </ul>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1544717305-27601adce137?auto=format&fit=crop&w=600&h=400&q=80" alt="Various construction materials laid out" loading="lazy" />
+                </div>
 
-            <a href="full-scale-construction.html" class="service-card-link" aria-label="Learn more about Full-Scale Construction">
-                <article class="service-card" tabindex="0" aria-labelledby="construction-title" aria-describedby="construction-desc">
-                    <i class="fas fa-hard-hat service-icon" aria-hidden="true"></i>
-                    <h3 id="construction-title">Full-Scale Construction</h3>
-                    <p id="construction-desc">
-                        Our expert team handles diverse construction projects, from residential homes and commercial buildings to infrastructure development, delivering robust and sustainable solutions.
-                    </p>
-                    <img
-                        src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=320&h=180&q=80"
-                        alt="Construction workers on site inspecting blueprints"
-                        class="service-image"
-                    />
-                </article>
-            </a>
+                <div class="detail-block">
+                    <div class="detail-block-text">
+                        <h3>Quality Assurance & Delivery</h3>
+                        <p>Quality and reliability are at the core of our supply chain. We ensure all materials meet strict industry standards and are delivered efficiently to your site.</p>
+                        <ul>
+                            <li>**Certified Materials:** All products are tested and certified for quality and durability.</li>
+                            <li>**Timely Delivery:** Our logistics team ensures prompt and reliable delivery to keep your project on schedule.</li>
+                            <li>**Competitive Pricing:** We offer competitive rates without compromising on quality.</li>
+                            <li>**Expert Consultation:** Our team can advise on the best materials for your specific project needs.</li>
+                        </ul>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1541888946-ec08496e5792?auto=format&fit=crop&w=600&h=400&q=80" alt="Construction site with a truck and materials" loading="lazy" />
+                </div>
+            </div>
 
-
-            <a href="auto-shop.html" class="service-card-link" aria-label="Learn more about Professional Auto Shop Services">
-                <article class="service-card" tabindex="0" aria-labelledby="auto-title" aria-describedby="auto-desc">
-                    <i class="fas fa-tools service-icon" aria-hidden="true"></i>
-                    <h3 id="auto-title">Professional Auto Shop Services</h3>
-                    <p id="auto-desc">
-                        We offer comprehensive auto diagnostics, routine maintenance, and complex repairs for all vehicle types, ensuring your fleet or personal vehicle runs smoothly and safely.
-                    </p>
-                    <img
-                        src="https://images.unsplash.com/photo-1518609878373-06d740f60d8b?auto=format&fit=crop&w=320&h=180&q=80"
-                        alt="Mechanic repairing a car engine in an auto shop"
-                        class="service-image"
-                    />
-                </article>
-            </a>
-
-            <a href="it-solutions.html" class="service-card-link" aria-label="Learn more about Modern IT Solutions">
-                <article class="service-card" tabindex="0" aria-labelledby="it-title" aria-describedby="it-desc">
-                    <i class="fas fa-laptop-code service-icon" aria-hidden="true"></i>
-                    <h3 id="it-title">Modern IT Solutions</h3>
-                    <p id="it-desc">
-                        Empower your business with cutting-edge IT services, including custom software development, robust web solutions, network setup, and reliable technical support.
-                    </p>
-                    <img
-                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=320&h=180&q=80"
-                        alt="Person coding on laptop with multiple screens for IT solutions"
-                        class="service-image"
-                    />
-                </article>
-            </a>
-
-            </section>
+            <div class="cta-section">
+                <h2>Need Quality Materials for Your Next Project?</h2>
+                <p>
+                    Contact us today to discuss your material requirements and get a personalized quote. Our team is ready to assist you in making your construction project a success.
+                </p>
+                <a href="contact.html" class="btn-contact">Get a Quote Now</a>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -449,7 +502,6 @@
     </footer>
 
     <script defer>
-        // Simple nav toggle (consistent across all pages)
         document.addEventListener('DOMContentLoaded', function () {
             const menuBtn = document.getElementById('menu-toggle');
             const nav = document.querySelector('.nav-links');
