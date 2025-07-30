@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chomene Investment Limited</title>
-    <link rel="stylesheet" href="styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <style>
@@ -16,6 +15,7 @@
             padding: 0;
             background-color: #f8fafd; /* Light background for the page */
             color: #333;
+            overflow-x: hidden; /* Prevent horizontal scroll from animations */
         }
 
         .container {
@@ -53,7 +53,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            flex-wrap: nowrap; /* Prevent logo and nav from wrapping prematurely */
         }
 
         .logo-container {
@@ -67,16 +67,20 @@
             color: #003366;
             text-decoration: none;
             font-weight: 700;
+            display: flex;
+            align-items: center;
+            white-space: nowrap; /* Keep logo text on one line */
         }
 
         .logo img {
-            height: 120px; /* Adjust as needed for your logo */
-            width: 120px;
+            height: 100px; /* Slightly reduce logo size */
+            width: 100px;
             margin-right: 10px;
         }
+
         .nav-links {
             display: flex;
-            gap: 1.5rem;
+            gap: 1.8rem;
         }
 
         .nav-links a {
@@ -104,6 +108,17 @@
             width: 100%;
         }
 
+        /* Mobile Menu Button */
+        .menu-btn {
+            display: none; /* Hidden by default on desktop */
+            background: none;
+            border: none;
+            font-size: 1.8rem;
+            color: #0056b3;
+            cursor: pointer;
+            z-index: 1001; /* Ensure button is above mobile nav */
+        }
+
         /* Hero Section */
         .hero {
             background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
@@ -115,56 +130,60 @@
             margin-bottom: 3rem;
             position: relative;
             overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 86, 179, 0.3); /* Softer, more cohesive shadow */
+        }
+
+        .hero::before, .hero::after {
+            content: '';
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            pointer-events: none; /* Allow clicks to pass through */
         }
 
         .hero::before {
-            content: '';
-            position: absolute;
-            top: -50px;
-            left: -50px;
-            width: 200px;
-            height: 200px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            animation: moveCircles 15s infinite alternate;
+            top: -20%;
+            left: -10%;
+            width: 300px;
+            height: 300px;
+            animation: moveCircles 15s infinite alternate ease-in-out;
         }
 
         .hero::after {
-            content: '';
-            position: absolute;
-            bottom: -50px;
-            right: -50px;
-            width: 150px;
-            height: 150px;
-            background: rgba(255, 255, 255, 0.15);
-            border-radius: 50%;
-            animation: moveCircles 20s infinite alternate-reverse;
+            bottom: -15%;
+            right: -10%;
+            width: 250px;
+            height: 250px;
+            animation: moveCircles 20s infinite alternate-reverse ease-in-out;
+            animation-delay: 2s;
         }
 
         @keyframes moveCircles {
-            0% { transform: translate(0, 0); }
-            100% { transform: translate(50px, 50px); }
+            0% { transform: translate(0, 0) scale(1); opacity: 0.1; }
+            50% { transform: translate(20px, 30px) scale(1.05); opacity: 0.15; }
+            100% { transform: translate(0, 0) scale(1); opacity: 0.1; }
         }
 
         .hero h2 {
             font-size: 3.2rem;
             margin-bottom: 1.5rem;
             color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         }
 
         .hero-subtext {
             font-size: 1.2rem;
             max-width: 800px;
             margin: 0 auto 2.5rem auto;
-            opacity: 0.9;
+            opacity: 0.95;
+            line-height: 1.8;
         }
 
         /* Buttons */
         .btn-primary, .btn-secondary {
             display: inline-block;
             margin-top: 1.5rem;
-            padding: 0.9rem 2.5rem;
+            padding: 1rem 3rem; /* Increased padding */
             border-radius: 30px;
             font-weight: 600;
             text-decoration: none;
@@ -178,7 +197,7 @@
             background-color: #ffffff;
             color: #007bff;
             box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);
-            border: 2px solid #ffffff; /* Add border for consistency on hover */
+            border: 2px solid #ffffff;
         }
 
         .btn-primary:hover {
@@ -205,7 +224,7 @@
         /* Features Grid */
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Min width increased */
             gap: 2.5rem;
             margin-top: 3rem;
             margin-bottom: 3rem;
@@ -222,6 +241,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: space-between; /* Distribute content nicely */
         }
 
         .feature-box:hover {
@@ -250,6 +270,7 @@
             font-size: 1rem;
             color: #555;
             flex-grow: 1; /* Allows text to take up available space */
+            margin-bottom: 1.5rem; /* Space before image */
         }
 
         .feature-box img {
@@ -257,7 +278,6 @@
             height: 200px; /* Fixed height for images */
             object-fit: cover; /* Ensures images cover the area without distortion */
             border-radius: 8px;
-            margin-top: 1.5rem;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
@@ -303,6 +323,7 @@
             max-width: 900px;
             margin: 0 auto 2.5rem auto;
             color: #444;
+            line-height: 1.7;
         }
 
         /* What Sets Us Apart Section */
@@ -319,7 +340,7 @@
 
         .value-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjusted min-width */
             gap: 2rem;
             max-width: 1000px;
             margin: 0 auto;
@@ -408,25 +429,79 @@
         /* Responsive Design */
         @media (max-width: 768px) {
             .header-container {
-                flex-direction: column;
-                text-align: center;
+                flex-direction: row; /* Keep logo and menu button in a row */
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 1.5rem; /* Add padding to header container */
             }
 
             .nav-links {
-                margin-top: 1rem;
-                justify-content: center;
+                display: flex; /* Keep flex for column direction */
+                flex-direction: column;
+                background: #002244; /* Darker background for mobile nav */
+                width: 100%;
+                position: absolute;
+                top: 100%; /* Position below the header */
+                left: 0;
+                padding: 0;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+                align-items: center;
+                border-top: 1px solid rgba(255,255,255,0.1);
+                max-height: 0; /* Hidden by default */
+                overflow: hidden;
+                transition: max-height 0.5s ease-out, padding 0.5s ease-out; /* Smooth transition */
+            }
+
+            .nav-links.open {
+                max-height: 300px; /* Adjust based on number of links */
+                padding: 1rem 0;
+            }
+
+            .nav-links a {
+                color: white;
+                padding: 0.8rem 1rem;
+                width: 100%;
+                text-align: center;
+                border-bottom: 1px solid rgba(255,255,255,0.05); /* Subtle separator */
+            }
+
+            .nav-links a:last-child {
+                border-bottom: none;
+            }
+
+            .nav-links a::after {
+                display: none; /* Hide hover underline on mobile */
+            }
+
+            .nav-links a:hover {
+                background-color: #004080;
+            }
+
+            .menu-btn {
+                display: block; /* Show menu button on mobile */
+            }
+
+            /* Hero Section Mobile */
+            .hero {
+                padding: 4rem 0;
+                border-bottom-left-radius: 30px;
+                border-bottom-right-radius: 30px;
             }
 
             .hero h2 {
-                font-size: 2.2rem;
+                font-size: 2.5rem;
             }
 
             .hero-subtext {
-                font-size: 1rem;
+                font-size: 1.1rem;
+                margin-left: 1rem;
+                margin-right: 1rem;
             }
 
+            /* Feature Grid Mobile */
             .features-grid, .value-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr; /* Single column on mobile */
+                gap: 2rem;
             }
 
             .feature-box, .value-item {
@@ -438,27 +513,51 @@
             }
 
             .about-preview h2 {
-                font-size: 2rem;
+                font-size: 2.2rem;
+            }
+
+            .about-preview p {
+                font-size: 1rem;
+            }
+
+            .btn-primary, .btn-secondary {
+                padding: 0.8rem 2.5rem;
+                font-size: 1rem;
+            }
+
+            .logo img {
+                height: 80px; /* Smaller logo on mobile */
+                width: 80px;
             }
         }
 
         @media (max-width: 480px) {
             .logo {
-                font-size: 1.5rem;
+                font-size: 1.4rem;
             }
 
-            .nav-links {
-                flex-direction: column;
-                gap: 0.5rem;
+            .hero h2 {
+                font-size: 2rem;
             }
 
-            .btn-primary, .btn-secondary {
-                padding: 0.7rem 1.8rem;
-                font-size: 1rem;
+            .hero-subtext {
+                font-size: 0.95rem;
             }
 
             .feature-icon {
-                font-size: 3.5rem;
+                font-size: 3.8rem;
+            }
+
+            .feature-box h3 {
+                font-size: 1.6rem;
+            }
+
+            .value-item h3 {
+                font-size: 1.4rem;
+            }
+
+            .about-preview h2 {
+                font-size: 1.8rem;
             }
         }
     </style>
@@ -472,6 +571,9 @@
                     Chomene Investment Limited
                 </a>
             </div>
+            <button id="menu-toggle" class="menu-btn" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
             <nav class="nav-links">
                 <a href="index.html" class="active">Home</a>
                 <a href="services.html">Services</a>
@@ -579,5 +681,35 @@
             <p>&copy; 2025 Chomene Investment Limited. All rights reserved.</p>
         </div>
     </footer>
+
+    <script defer>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuBtn = document.getElementById('menu-toggle');
+            const nav = document.querySelector('.nav-links');
+            const menuIcon = menuBtn.querySelector('i');
+
+            menuBtn.addEventListener('click', () => {
+                nav.classList.toggle('open');
+                if (nav.classList.contains('open')) {
+                    menuIcon.classList.remove('fa-bars');
+                    menuIcon.classList.add('fa-times');
+                } else {
+                    menuIcon.classList.remove('fa-times');
+                    menuIcon.classList.add('fa-bars');
+                }
+            });
+
+            // Close the navigation when a link is clicked
+            nav.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (nav.classList.contains('open')) {
+                        nav.classList.remove('open');
+                        menuIcon.classList.remove('fa-times');
+                        menuIcon.classList.add('fa-bars');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
