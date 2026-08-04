@@ -3,564 +3,28 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chomene Investment Limited</title>
+    <title>Chomene Investment Limited | Construction, Auto Shop & IT Solutions in Zambia</title>
+    <meta name="description" content="Chomene Investment Limited is a Zambian company offering construction materials supply, full-scale construction, professional auto shop services, and modern IT solutions — all under one trusted name." />
+    <link rel="canonical" href="https://www.chomene.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Chomene Investment Limited" />
+    <meta property="og:title" content="Chomene Investment Limited | Construction, Auto Shop & IT Solutions" />
+    <meta property="og:description" content="Construction materials supply, full-scale construction, vehicle repairs, and IT solutions — all under one trusted Zambian name." />
+    <meta property="og:url" content="https://www.chomene.com/" />
+    <meta property="og:image" content="https://www.chomene.com/images/logo.jpg" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Chomene Investment Limited" />
+    <meta name="twitter:description" content="Construction materials supply, full-scale construction, vehicle repairs, and IT solutions — all under one trusted Zambian name." />
+    <meta name="twitter:image" content="https://www.chomene.com/images/logo.jpg" />
+    <meta name="theme-color" content="#003366" />
+    <link rel="icon" href="images/logo.jpg" type="image/jpeg" />
+    <link rel="apple-touch-icon" href="images/logo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="stylesheet" href="styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <style>
-        /* General Body and Typography */
-        body {
-            font-family: 'Poppins', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f8fafd; /* Light background for the page */
-            color: #333;
-            overflow-x: hidden; /* Prevent horizontal scroll from animations */
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-
-        h1, h2, h3 {
-            color: #003366;
-            font-weight: 700;
-        }
-
-        h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-            text-align: center;
-        }
-
-        p {
-            margin-bottom: 1rem;
-        }
-
-        /* Header */
-        .main-header {
-            background-color: #fff;
-            padding: 1rem 0;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: nowrap; /* Prevent logo and nav from wrapping prematurely */
-        }
-
-        .logo-container {
-            display: flex;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.8rem;
-            margin: 0;
-            color: #003366;
-            text-decoration: none;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-            white-space: nowrap; /* Keep logo text on one line */
-        }
-
-        .logo img {
-            height: 100px; /* Slightly reduce logo size */
-            width: 100px;
-            margin-right: 10px;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 1.8rem;
-        }
-
-        .nav-links a {
-            color: #0056b3;
-            text-decoration: none;
-            font-weight: 600;
-            padding: 0.5rem 0;
-            position: relative;
-            transition: color 0.3s ease;
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 3px;
-            background-color: #007bff;
-            bottom: 0;
-            left: 0;
-            transition: width 0.3s ease;
-        }
-
-        .nav-links a:hover::after,
-        .nav-links a.active::after {
-            width: 100%;
-        }
-
-        /* Mobile Menu Button */
-        .menu-btn {
-            display: none; /* Hidden by default on desktop */
-            background: none;
-            border: none;
-            font-size: 1.8rem;
-            color: #0056b3;
-            cursor: pointer;
-            z-index: 1001; /* Ensure button is above mobile nav */
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
-            color: white;
-            padding: 6rem 0;
-            text-align: center;
-            border-bottom-left-radius: 50px;
-            border-bottom-right-radius: 50px;
-            margin-bottom: 3rem;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 86, 179, 0.3); /* Softer, more cohesive shadow */
-        }
-
-        .hero::before, .hero::after {
-            content: '';
-            position: absolute;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            pointer-events: none; /* Allow clicks to pass through */
-        }
-
-        .hero::before {
-            top: -20%;
-            left: -10%;
-            width: 300px;
-            height: 300px;
-            animation: moveCircles 15s infinite alternate ease-in-out;
-        }
-
-        .hero::after {
-            bottom: -15%;
-            right: -10%;
-            width: 250px;
-            height: 250px;
-            animation: moveCircles 20s infinite alternate-reverse ease-in-out;
-            animation-delay: 2s;
-        }
-
-        @keyframes moveCircles {
-            0% { transform: translate(0, 0) scale(1); opacity: 0.1; }
-            50% { transform: translate(20px, 30px) scale(1.05); opacity: 0.15; }
-            100% { transform: translate(0, 0) scale(1); opacity: 0.1; }
-        }
-
-        .hero h2 {
-            font-size: 3.2rem;
-            margin-bottom: 1.5rem;
-            color: white;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-        }
-
-        .hero-subtext {
-            font-size: 1.2rem;
-            max-width: 800px;
-            margin: 0 auto 2.5rem auto;
-            opacity: 0.95;
-            line-height: 1.8;
-        }
-
-        /* Buttons */
-        .btn-primary, .btn-secondary {
-            display: inline-block;
-            margin-top: 1.5rem;
-            padding: 1rem 3rem; /* Increased padding */
-            border-radius: 30px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            border: none;
-            font-size: 1.1rem;
-        }
-
-        .btn-primary {
-            background-color: #ffffff;
-            color: #007bff;
-            box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);
-            border: 2px solid #ffffff;
-        }
-
-        .btn-primary:hover {
-            background-color: #e0f2ff;
-            color: #0056b3;
-            box-shadow: 0 10px 25px rgba(0, 123, 255, 0.5);
-            transform: translateY(-3px);
-        }
-
-        .btn-secondary {
-            background-color: transparent;
-            color: #007bff;
-            border: 2px solid #007bff;
-            box-shadow: none;
-        }
-
-        .btn-secondary:hover {
-            background-color: #007bff;
-            color: white;
-            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
-            transform: translateY(-3px);
-        }
-
-        /* Features Grid */
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Min width increased */
-            gap: 2.5rem;
-            margin-top: 3rem;
-            margin-bottom: 3rem;
-            justify-content: center;
-        }
-
-        .feature-box {
-            background: #ffffff;
-            border-radius: 12px;
-            padding: 2.5rem;
-            text-align: center;
-            box-shadow: 0 8px 20px rgba(0, 123, 255, 0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between; /* Distribute content nicely */
-        }
-
-        .feature-box:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 35px rgba(0, 123, 255, 0.15);
-        }
-
-        .feature-icon {
-            font-size: 4.5rem;
-            color: #007bff;
-            margin-bottom: 1.5rem;
-            transition: color 0.3s ease;
-        }
-
-        .feature-box:hover .feature-icon {
-            color: #0056b3;
-        }
-
-        .feature-box h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-            color: #003366;
-        }
-
-        .feature-box p {
-            font-size: 1rem;
-            color: #555;
-            flex-grow: 1; /* Allows text to take up available space */
-            margin-bottom: 1.5rem; /* Space before image */
-        }
-
-        .feature-box img {
-            width: 100%;
-            height: 200px; /* Fixed height for images */
-            object-fit: cover; /* Ensures images cover the area without distortion */
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        /* About Preview / Why Choose Us */
-        .about-preview {
-            background: #e6f0ff;
-            border-radius: 15px;
-            padding: 4rem 3rem;
-            margin-bottom: 4rem;
-            box-shadow: 0 10px 30px rgba(0, 123, 255, 0.1);
-            text-align: center;
-            border-top: 5px solid #007bff;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .about-preview::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('https://images.unsplash.com/photo-1544717305-27601adce137?auto=format&fit=crop&w=1400&q=80') no-repeat center center; /* Subtle background image */
-            background-size: cover;
-            opacity: 0.05;
-            z-index: 1;
-        }
-
-        .about-preview .content {
-            position: relative;
-            z-index: 2;
-        }
-
-        .about-preview h2 {
-            font-size: 2.8rem;
-            color: #003366;
-            margin-bottom: 1rem;
-        }
-
-        .about-preview p {
-            font-size: 1.15rem;
-            max-width: 900px;
-            margin: 0 auto 2.5rem auto;
-            color: #444;
-            line-height: 1.7;
-        }
-
-        /* What Sets Us Apart Section */
-        .value-propositions {
-            background-color: #f0faff;
-            padding: 4rem 0;
-            text-align: center;
-            margin-bottom: 4rem;
-        }
-
-        .value-propositions h2 {
-            margin-bottom: 2.5rem;
-        }
-
-        .value-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjusted min-width */
-            gap: 2rem;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .value-item {
-            background: #ffffff;
-            padding: 2.5rem;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
-            text-align: left;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .value-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-        }
-
-        .value-item i {
-            font-size: 3rem;
-            color: #007bff;
-            margin-bottom: 1rem;
-        }
-
-        .value-item h3 {
-            font-size: 1.5rem;
-            margin-bottom: 0.8rem;
-            color: #003366;
-        }
-
-        .value-item p {
-            font-size: 0.95rem;
-            color: #666;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #003366;
-            color: white;
-            padding: 2.5rem 0;
-            text-align: center;
-            font-size: 0.95rem;
-            margin-top: 3rem;
-        }
-
-        .footer-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1.5rem;
-        }
-
-        .footer-nav {
-            display: flex;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .footer-nav a {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .footer-nav a:hover {
-            color: #007bff;
-        }
-
-        .social-links {
-            margin-top: 1rem;
-        }
-
-        .social-links a {
-            color: white;
-            font-size: 1.5rem;
-            margin: 0 0.8rem;
-            transition: color 0.3s ease;
-        }
-
-        .social-links a:hover {
-            color: #007bff;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .header-container {
-                flex-direction: row; /* Keep logo and menu button in a row */
-                justify-content: space-between;
-                align-items: center;
-                padding: 0 1.5rem; /* Add padding to header container */
-            }
-
-            .nav-links {
-                display: flex; /* Keep flex for column direction */
-                flex-direction: column;
-                background: #002244; /* Darker background for mobile nav */
-                width: 100%;
-                position: absolute;
-                top: 100%; /* Position below the header */
-                left: 0;
-                padding: 0;
-                box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-                align-items: center;
-                border-top: 1px solid rgba(255,255,255,0.1);
-                max-height: 0; /* Hidden by default */
-                overflow: hidden;
-                transition: max-height 0.5s ease-out, padding 0.5s ease-out; /* Smooth transition */
-            }
-
-            .nav-links.open {
-                max-height: 300px; /* Adjust based on number of links */
-                padding: 1rem 0;
-            }
-
-            .nav-links a {
-                color: white;
-                padding: 0.8rem 1rem;
-                width: 100%;
-                text-align: center;
-                border-bottom: 1px solid rgba(255,255,255,0.05); /* Subtle separator */
-            }
-
-            .nav-links a:last-child {
-                border-bottom: none;
-            }
-
-            .nav-links a::after {
-                display: none; /* Hide hover underline on mobile */
-            }
-
-            .nav-links a:hover {
-                background-color: #004080;
-            }
-
-            .menu-btn {
-                display: block; /* Show menu button on mobile */
-            }
-
-            /* Hero Section Mobile */
-            .hero {
-                padding: 4rem 0;
-                border-bottom-left-radius: 30px;
-                border-bottom-right-radius: 30px;
-            }
-
-            .hero h2 {
-                font-size: 2.5rem;
-            }
-
-            .hero-subtext {
-                font-size: 1.1rem;
-                margin-left: 1rem;
-                margin-right: 1rem;
-            }
-
-            /* Feature Grid Mobile */
-            .features-grid, .value-grid {
-                grid-template-columns: 1fr; /* Single column on mobile */
-                gap: 2rem;
-            }
-
-            .feature-box, .value-item {
-                padding: 2rem;
-            }
-
-            .about-preview {
-                padding: 3rem 1.5rem;
-            }
-
-            .about-preview h2 {
-                font-size: 2.2rem;
-            }
-
-            .about-preview p {
-                font-size: 1rem;
-            }
-
-            .btn-primary, .btn-secondary {
-                padding: 0.8rem 2.5rem;
-                font-size: 1rem;
-            }
-
-            .logo img {
-                height: 80px; /* Smaller logo on mobile */
-                width: 80px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .logo {
-                font-size: 1.4rem;
-            }
-
-            .hero h2 {
-                font-size: 2rem;
-            }
-
-            .hero-subtext {
-                font-size: 0.95rem;
-            }
-
-            .feature-icon {
-                font-size: 3.8rem;
-            }
-
-            .feature-box h3 {
-                font-size: 1.6rem;
-            }
-
-            .value-item h3 {
-                font-size: 1.4rem;
-            }
-
-            .about-preview h2 {
-                font-size: 1.8rem;
-            }
-        }
-    </style>
 </head>
 <body>
     <header class="main-header">
@@ -571,7 +35,7 @@
                     Chomene Investment Limited
                 </a>
             </div>
-            <button id="menu-toggle" class="menu-btn" aria-label="Toggle navigation menu">
+            <button id="menu-toggle" class="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
                 <i class="fas fa-bars"></i>
             </button>
             <nav class="nav-links">
@@ -587,7 +51,7 @@
         <div class="container">
             <h2>Your Partner in Building, Mobility, and Innovation</h2>
             <p class="hero-subtext">
-                At Chomene Investment Limited, we offer a robust suite of services spanning **construction materials supply, expert vehicle repairs, and cutting-edge IT solutions.** We are committed to delivering excellence and reliability across all our ventures, ensuring your projects and assets are in capable hands.
+                At Chomene Investment Limited, we offer a robust suite of services spanning <strong>construction materials supply, expert vehicle repairs, and cutting-edge IT solutions.</strong> We are committed to delivering excellence and reliability across all our ventures, ensuring your projects and assets are in capable hands.
             </p>
             <a href="services.html" class="btn-primary" aria-label="Explore our services">Explore Our Services</a>
         </div>
@@ -600,16 +64,16 @@
                 <i class="fa-solid fa-hard-hat feature-icon" aria-hidden="true"></i>
                 <h3 id="construction-title">Construction Materials Supply</h3>
                 <p id="construction-desc">
-                    We provide a comprehensive range of **high-quality, certified construction materials**, including cement, steel, aggregates, and more. Our supplies are sourced to meet rigorous industry standards, ensuring the durability and integrity of your building projects from residential to commercial scale.
+                    We provide a comprehensive range of <strong>high-quality, certified construction materials</strong>, including cement, steel, aggregates, and more. Our supplies are sourced to meet rigorous industry standards, ensuring the durability and integrity of your building projects from residential to commercial scale.
                 </p>
                 <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=320&q=80" alt="Construction site with materials and workers" loading="lazy" />
             </article>
 
             <article class="feature-box" tabindex="0" aria-labelledby="vehicle-title" aria-describedby="vehicle-desc">
-                <i class="fa-solid fa-car-wrench feature-icon" aria-hidden="true"></i>
+                <i class="fa-solid fa-car-side feature-icon" aria-hidden="true"></i>
                 <h3 id="vehicle-title">Vehicle Repairs & Maintenance</h3>
                 <p id="vehicle-desc">
-                    Our dedicated team of **certified mechanics** offers comprehensive vehicle diagnostic, repair, and scheduled maintenance services. From routine servicing to complex engine overhauls, we ensure your vehicles run safely, efficiently, and reliably, minimizing downtime and maximizing performance.
+                    Our dedicated team of <strong>certified mechanics</strong> offers comprehensive vehicle diagnostic, repair, and scheduled maintenance services. From routine servicing to complex engine overhauls, we ensure your vehicles run safely, efficiently, and reliably, minimizing downtime and maximizing performance.
                 </p>
                 <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=320&q=80" alt="Mechanic repairing a car engine" loading="lazy" />
             </article>
@@ -618,7 +82,7 @@
                 <i class="fa-solid fa-laptop-code feature-icon" aria-hidden="true"></i>
                 <h3 id="it-title">IT Solutions & Consulting</h3>
                 <p id="it-desc">
-                    Empower your business with our cutting-edge **IT solutions**. We specialize in professional web development, robust network installation, and strategic IT consulting. Whether you need a new digital presence, secure infrastructure, or expert tech guidance, we tailor solutions to your specific needs.
+                    Empower your business with our cutting-edge <strong>IT solutions</strong>. We specialize in professional web development, robust network installation, and strategic IT consulting. Whether you need a new digital presence, secure infrastructure, or expert tech guidance, we tailor solutions to your specific needs.
                 </p>
                 <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=320&q=80" alt="Person coding on a laptop with multiple screens" loading="lazy" />
             </article>
@@ -682,34 +146,6 @@
         </div>
     </footer>
 
-    <script defer>
-        document.addEventListener('DOMContentLoaded', function () {
-            const menuBtn = document.getElementById('menu-toggle');
-            const nav = document.querySelector('.nav-links');
-            const menuIcon = menuBtn.querySelector('i');
-
-            menuBtn.addEventListener('click', () => {
-                nav.classList.toggle('open');
-                if (nav.classList.contains('open')) {
-                    menuIcon.classList.remove('fa-bars');
-                    menuIcon.classList.add('fa-times');
-                } else {
-                    menuIcon.classList.remove('fa-times');
-                    menuIcon.classList.add('fa-bars');
-                }
-            });
-
-            // Close the navigation when a link is clicked
-            nav.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    if (nav.classList.contains('open')) {
-                        nav.classList.remove('open');
-                        menuIcon.classList.remove('fa-times');
-                        menuIcon.classList.add('fa-bars');
-                    }
-                });
-            });
-        });
-    </script>
+    <script src="script.js" defer></script>
 </body>
 </html>

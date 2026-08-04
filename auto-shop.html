@@ -4,410 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Professional Auto Shop Services - Chomene Investment Limited</title>
+    <meta name="description" content="Professional auto shop services from Chomene Investment Limited — vehicle maintenance, diagnostics, and repairs by certified mechanics." />
+    <link rel="canonical" href="https://www.chomene.com/auto-shop.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Chomene Investment Limited" />
+    <meta property="og:title" content="Professional Auto Shop Services - Chomene Investment Limited" />
+    <meta property="og:description" content="Vehicle maintenance, diagnostics, and repairs by certified mechanics." />
+    <meta property="og:url" content="https://www.chomene.com/auto-shop.html" />
+    <meta property="og:image" content="https://www.chomene.com/images/logo.jpg" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Professional Auto Shop Services - Chomene Investment Limited" />
+    <meta name="twitter:description" content="Vehicle maintenance, diagnostics, and repairs by certified mechanics." />
+    <meta name="twitter:image" content="https://www.chomene.com/images/logo.jpg" />
+    <meta name="theme-color" content="#003366" />
+    <link rel="icon" href="images/logo.jpg" type="image/jpeg" />
+    <link rel="apple-touch-icon" href="images/logo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
     <link rel="stylesheet" href="styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <style>
-        /* General Body and Typography */
-        body {
-            font-family: 'Poppins', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f8fafd; /* Light background for the page */
-            color: #333;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-
-        h1, h2, h3 {
-            color: #003366;
-            font-weight: 700;
-        }
-
-        h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-            text-align: center;
-        }
-
-        p {
-            margin-bottom: 1rem;
-        }
-
-        /* Header */
-        .main-header {
-            background-color: #fff;
-            padding: 1rem 0;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .logo-container {
-            display: flex;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.8rem;
-            margin: 0;
-            color: #003366;
-            text-decoration: none;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-        }
-
-        .logo img {
-            height: 120px;
-            width: 120px;
-            margin-right: 10px;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 1.8rem;
-        }
-
-        .nav-links a {
-            color: #0056b3;
-            text-decoration: none;
-            font-weight: 600;
-            padding: 0.5rem 0;
-            position: relative;
-            transition: color 0.3s ease;
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 3px;
-            background-color: #007bff;
-            bottom: 0;
-            left: 0;
-            transition: width 0.3s ease;
-        }
-
-        .nav-links a:hover::after,
-        .nav-links a.active::after {
-            width: 100%;
-        }
-
-        /* Mobile Menu Button */
-        .menu-btn {
-            display: none; /* Hidden by default on desktop */
-            background: none;
-            border: none;
-            font-size: 1.8rem;
-            color: #0056b3;
-            cursor: pointer;
-        }
-
-        /* Main Content Specific Styles */
-        .service-detail-section {
-            padding: 4rem 0;
-            text-align: center;
-        }
-
-        .service-detail-section h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .service-detail-section .intro-text {
-            font-size: 1.2rem;
-            max-width: 900px;
-            margin: 0 auto 3rem auto;
-            color: #555;
-        }
-
-        .detail-content {
-            display: flex;
-            flex-direction: column;
-            gap: 3rem;
-            margin-top: 3rem;
-        }
-
-        .detail-block {
-            background-color: #ffffff;
-            padding: 3rem;
-            border-radius: 15px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-            text-align: left;
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-            flex-wrap: wrap; /* Allow content to wrap on smaller screens */
-        }
-
-        .detail-block:nth-child(even) {
-            flex-direction: row-reverse; /* Alternate image/text on even blocks */
-        }
-
-        .detail-block-text {
-            flex: 1;
-            min-width: 300px; /* Ensure text doesn't get too narrow */
-        }
-
-        .detail-block h3 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            color: #007bff;
-        }
-
-        .detail-block p {
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .detail-block ul {
-            list-style: none;
-            padding: 0;
-            margin-bottom: 1.5rem;
-        }
-
-        .detail-block ul li {
-            font-size: 1rem;
-            margin-bottom: 0.8rem;
-            padding-left: 1.8rem;
-            position: relative;
-            color: #444;
-        }
-
-        .detail-block ul li::before {
-            content: "\f00c"; /* Font Awesome check icon */
-            font-family: "Font Awesome 6 Free";
-            font-weight: 900;
-            color: #28a745; /* Green checkmark */
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
-
-        .detail-block img {
-            max-width: 400px;
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .cta-section {
-            background-color: #007bff;
-            color: white;
-            padding: 4rem 2rem;
-            text-align: center;
-            border-radius: 15px;
-            margin-top: 4rem;
-        }
-
-        .cta-section h2 {
-            color: white;
-            font-size: 2.8rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .cta-section p {
-            font-size: 1.1rem;
-            max-width: 800px;
-            margin: 0 auto 2.5rem auto;
-        }
-
-        .btn-contact {
-            display: inline-block;
-            background-color: white;
-            color: #007bff;
-            padding: 1rem 3rem;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-        }
-
-        .btn-contact:hover {
-            background-color: #e0f2ff;
-            color: #0056b3;
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-        }
-
-        /* Footer (consistent with other pages) */
-        footer {
-            background-color: #003366;
-            color: white;
-            padding: 2.5rem 0;
-            text-align: center;
-            font-size: 0.95rem;
-            margin-top: 3rem;
-        }
-
-        .footer-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1.5rem;
-        }
-
-        .footer-nav {
-            display: flex;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .footer-nav a {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .footer-nav a:hover {
-            color: #007bff;
-        }
-
-        .social-links {
-            margin-top: 1rem;
-        }
-
-        .social-links a {
-            color: white;
-            font-size: 1.5rem;
-            margin: 0 0.8rem;
-            transition: color 0.3s ease;
-        }
-
-        .social-links a:hover {
-            color: #007bff;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .header-container {
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-                padding: 0 1.5rem;
-            }
-            .nav-links {
-                display: flex; /* Keep flex for column direction */
-                flex-direction: column;
-                background: #002244;
-                width: 100%;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                padding: 0;
-                box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-                align-items: center;
-                border-top: 1px solid rgba(255,255,255,0.1);
-                max-height: 0;
-                overflow: hidden;
-                transition: max-height 0.5s ease-out;
-            }
-            .nav-links.open {
-                max-height: 300px;
-                padding: 1rem 0;
-            }
-            .nav-links a {
-                color: white;
-                padding: 0.8rem 1rem;
-                width: 100%;
-                text-align: center;
-                border-bottom: 1px solid rgba(255,255,255,0.05);
-            }
-            .nav-links a:last-child {
-                border-bottom: none;
-            }
-            .nav-links a::after {
-                display: none;
-            }
-            .nav-links a:hover {
-                background-color: #004080;
-            }
-            .menu-btn {
-                display: block;
-            }
-
-            /* Service Detail Page Responsive */
-            .service-detail-section h1 {
-                font-size: 2.5rem;
-            }
-            .service-detail-section .intro-text {
-                font-size: 1rem;
-            }
-            .detail-block {
-                flex-direction: column; /* Stack image and text vertically */
-                padding: 2rem;
-            }
-            .detail-block:nth-child(even) {
-                flex-direction: column; /* Also stack for even blocks */
-            }
-            .detail-block-text {
-                min-width: unset; /* Remove min-width on small screens */
-            }
-            .detail-block img {
-                max-width: 100%;
-                margin-top: 1.5rem; /* Add space when stacked */
-            }
-            .detail-block h3 {
-                font-size: 1.6rem;
-            }
-            .detail-block p {
-                font-size: 1rem;
-            }
-            .cta-section {
-                padding: 3rem 1rem;
-            }
-            .cta-section h2 {
-                font-size: 2rem;
-            }
-            .btn-contact {
-                padding: 0.8rem 2.5rem;
-                font-size: 1rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .logo {
-                font-size: 1.5rem;
-            }
-            .menu-btn {
-                font-size: 1.6rem;
-            }
-            .nav-links {
-                gap: 0.5rem;
-            }
-
-            .service-detail-section h1 {
-                font-size: 2rem;
-            }
-            .detail-block {
-                padding: 1.5rem;
-            }
-            .detail-block h3 {
-                font-size: 1.4rem;
-            }
-            .detail-block ul li {
-                font-size: 0.9rem;
-            }
-        }
-    </style>
 </head>
 <body>
     <header class="main-header">
@@ -418,7 +35,7 @@
                     Chomene Investment Limited
                 </a>
             </div>
-            <button id="menu-toggle" class="menu-btn" aria-label="Toggle navigation menu">
+            <button id="menu-toggle" class="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
                 <i class="fas fa-bars"></i>
             </button>
             <nav class="nav-links">
@@ -434,7 +51,7 @@
         <section class="service-detail-section">
             <h1>Professional Auto Shop Services</h1>
             <p class="intro-text">
-                Keep your vehicles running in peak condition with Chomene Investment Limited's professional auto shop services. Our **certified mechanics** use state-of-the-art diagnostic tools and **genuine parts** to ensure your vehicle's safety, efficiency, and longevity.
+                Keep your vehicles running in peak condition with Chomene Investment Limited's professional auto shop services. Our <strong>certified mechanics</strong> use state-of-the-art diagnostic tools and <strong>genuine parts</strong> to ensure your vehicle's safety, efficiency, and longevity.
             </p>
 
             <div class="detail-content">
@@ -443,15 +60,15 @@
                         <h3>Comprehensive Vehicle Maintenance</h3>
                         <p>Regular maintenance is key to vehicle performance and lifespan. We offer a full range of services to keep your car, truck, or fleet in top shape.</p>
                         <ul>
-                            <li>**Routine Servicing:** Oil changes, filter replacements, fluid checks.</li>
-                            <li>**Brake Inspections & Repair:** Ensuring your stopping power is reliable.</li>
-                            <li>**Tire Services:** Rotation, balancing, and new tire installation.</li>
-                            <li>**Battery Testing & Replacement:** Prevent unexpected breakdowns.</li>
-                            <li>**A/C System Recharges & Repair:** Stay comfortable on the road.</li>
-                            <li>**Wheel Alignment:** For better handling and tire wear.</li>
+                            <li><strong>Routine Servicing:</strong> Oil changes, filter replacements, fluid checks.</li>
+                            <li><strong>Brake Inspections & Repair:</strong> Ensuring your stopping power is reliable.</li>
+                            <li><strong>Tire Services:</strong> Rotation, balancing, and new tire installation.</li>
+                            <li><strong>Battery Testing & Replacement:</strong> Prevent unexpected breakdowns.</li>
+                            <li><strong>A/C System Recharges & Repair:</strong> Stay comfortable on the road.</li>
+                            <li><strong>Wheel Alignment:</strong> For better handling and tire wear.</li>
                         </ul>
                     </div>
-                    <img src="https://images.unsplash.com/photo-1596707323985-e118c7edce8c?auto=format&fit=crop&w=600&h=400&q=80" alt="Mechanic inspecting a car's engine" loading="lazy" />
+                    <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?auto=format&fit=crop&w=600&h=400&q=80" alt="Mechanic inspecting a car's engine" loading="lazy" />
                 </div>
 
                 <div class="detail-block">
@@ -459,22 +76,22 @@
                         <h3>Advanced Diagnostics & Repair</h3>
                         <p>When issues arise, our skilled technicians can accurately diagnose problems and perform effective, lasting repairs.</p>
                         <ul>
-                            <li>**Engine Diagnostics & Repair:** From minor tunes to major overhauls.</li>
-                            <li>**Transmission Services:** Repair and replacement for smooth gear changes.</li>
-                            <li>**Suspension & Steering Repair:** For a comfortable and controlled ride.</li>
-                            <li>**Electrical System Troubleshooting:** Resolving wiring and component issues.</li>
-                            <li>**Exhaust System Repair:** Ensuring proper emissions and sound.</li>
-                            <li>**Pre-Purchase Inspections:** Get an expert opinion before you buy.</li>
+                            <li><strong>Engine Diagnostics & Repair:</strong> From minor tunes to major overhauls.</li>
+                            <li><strong>Transmission Services:</strong> Repair and replacement for smooth gear changes.</li>
+                            <li><strong>Suspension & Steering Repair:</strong> For a comfortable and controlled ride.</li>
+                            <li><strong>Electrical System Troubleshooting:</strong> Resolving wiring and component issues.</li>
+                            <li><strong>Exhaust System Repair:</strong> Ensuring proper emissions and sound.</li>
+                            <li><strong>Pre-Purchase Inspections:</strong> Get an expert opinion before you buy.</li>
                         </ul>
                     </div>
-                    <img src="https://images.unsplash.com/photo-1580273295058-7e3f6063ceb7?auto=format&fit=crop&w=600&h=400&q=80" alt="Car on a lift in an auto repair shop" loading="lazy" />
+                    <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=600&h=400&q=80" alt="Car on a lift in an auto repair shop" loading="lazy" />
                 </div>
             </div>
 
             <div class="cta-section">
                 <h2>Ready for Reliable Vehicle Care?</h2>
                 <p>
-                    Schedule your service appointment with Chomene Investment Limited today. We ensure **quality workmanship** and **clear communication** for all your automotive needs.
+                    Schedule your service appointment with Chomene Investment Limited today. We ensure <strong>quality workmanship</strong> and <strong>clear communication</strong> for all your automotive needs.
                 </p>
                 <a href="contact.html" class="btn-contact">Book a Service Now</a>
             </div>
@@ -500,35 +117,6 @@
         </div>
     </footer>
 
-    <script defer>
-        document.addEventListener('DOMContentLoaded', function () {
-            const menuBtn = document.getElementById('menu-toggle');
-            const nav = document.querySelector('.nav-links');
-            const menuIcon = menuBtn.querySelector('i'); // Get the icon element
-
-            menuBtn.addEventListener('click', () => {
-                nav.classList.toggle('open');
-                // Toggle the icon between bars and times
-                if (nav.classList.contains('open')) {
-                    menuIcon.classList.remove('fa-bars');
-                    menuIcon.classList.add('fa-times');
-                } else {
-                    menuIcon.classList.remove('fa-times');
-                    menuIcon.classList.add('fa-bars');
-                }
-            });
-
-            // Close the navigation when a link is clicked (optional, but good for UX)
-            nav.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    if (nav.classList.contains('open')) {
-                        nav.classList.remove('open');
-                        menuIcon.classList.remove('fa-times');
-                        menuIcon.classList.add('fa-bars');
-                    }
-                });
-            });
-        });
-    </script>
+    <script src="script.js" defer></script>
 </body>
 </html>
