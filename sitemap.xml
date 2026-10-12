@@ -5,6 +5,10 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://www.chomene.com/sitemap.html</loc>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://www.chomene.com/services.html</loc>
     <priority>0.8</priority>
   </url>
@@ -33,7 +37,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.chomene.com/auto-shop.html</loc>
+    <loc>https://www.chomene.com/hardware.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
