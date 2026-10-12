@@ -1,151 +1,530 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chomene Investment Limited | Construction, Auto Shop & IT Solutions in Zambia</title>
-    <meta name="description" content="Chomene Investment Limited is a Zambian company offering construction materials supply, full-scale construction, professional auto shop services, and modern IT solutions — all under one trusted name." />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chomene Investment Limited | Build, Mobility &amp; Technology</title>
+    <meta
+      name="description"
+      content="Chomene Investment Limited provides construction materials, full-scale construction, vehicle care and IT solutions in Zambia."
+    />
     <link rel="canonical" href="https://www.chomene.com/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Chomene Investment Limited" />
-    <meta property="og:title" content="Chomene Investment Limited | Construction, Auto Shop & IT Solutions" />
-    <meta property="og:description" content="Construction materials supply, full-scale construction, vehicle repairs, and IT solutions — all under one trusted Zambian name." />
+    <meta
+      property="og:title"
+      content="Chomene Investment Limited | Build, Mobility & Technology"
+    />
+    <meta
+      property="og:description"
+      content="Practical construction, automotive and technology solutions from one Zambian team."
+    />
     <meta property="og:url" content="https://www.chomene.com/" />
-    <meta property="og:image" content="https://www.chomene.com/images/logo.jpg" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Chomene Investment Limited" />
-    <meta name="twitter:description" content="Construction materials supply, full-scale construction, vehicle repairs, and IT solutions — all under one trusted Zambian name." />
-    <meta name="twitter:image" content="https://www.chomene.com/images/logo.jpg" />
-    <meta name="theme-color" content="#003366" />
+    <meta
+      property="og:image"
+      content="https://www.chomene.com/images/logo.jpg"
+    />
+    <meta name="theme-color" content="#07171a" />
     <link rel="icon" href="images/logo.jpg" type="image/jpeg" />
-    <link rel="apple-touch-icon" href="images/logo.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-</head>
-<body>
-    <header class="main-header">
-        <div class="container header-container">
-            <div class="logo-container">
-                <a href="index.html" class="logo" aria-label="Chomene Investment Limited Home">
-                    <img src="images/logo.jpg" alt="Chomene Investment Limited Logo" />
-                    Chomene Investment Limited
-                </a>
-            </div>
-            <button id="menu-toggle" class="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav class="nav-links">
-                <a href="index.html" class="active">Home</a>
-                <a href="services.html">Services</a>
-                <a href="about.html">About Us</a>
-                <a href="contact.html">Contact</a>
-            </nav>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <span>Zambian expertise across essential industries</span>
+        <div class="topbar-links">
+          <a href="tel:+260976898797"
+            ><i class="fa-solid fa-phone" aria-hidden="true"></i>
+            +260&nbsp;976&nbsp;898&nbsp;797</a
+          ><a
+            href="https://wa.me/260976898797"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            WhatsApp</a
+          ><a href="mailto:isaacians36@gmail.com"
+            ><i class="fa-regular fa-envelope" aria-hidden="true"></i> Email
+            us</a
+          >
         </div>
+      </div>
+    </div>
+    <header class="main-header">
+      <div class="container header-inner">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="Chomene Investment Limited home"
+          ><img src="images/logo.jpg" alt="" /><span class="brand-copy"
+            ><span class="brand-name">Chomene</span
+            ><span class="brand-type">Investment Limited</span></span
+          ></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          data-menu-toggle
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+          aria-label="Open navigation menu"
+        >
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+        <nav
+          class="site-nav"
+          id="primary-navigation"
+          aria-label="Primary navigation"
+        >
+          <a class="nav-link active" href="index.html" aria-current="page"
+            >Home</a
+          >
+          <div class="nav-item">
+            <a class="nav-main-link" href="services.html">Services</a>
+            <button
+              class="submenu-toggle"
+              type="button"
+              data-submenu-toggle
+              aria-expanded="false"
+              aria-controls="services-menu"
+              aria-label="Show service pages"
+            >
+              <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="submenu" id="services-menu">
+              <a href="construction-materials.html"
+                ><i class="fa-solid fa-cubes-stacked" aria-hidden="true"></i
+                ><strong>Materials supply</strong
+                ><small>Cement, steel, aggregates and more</small></a
+              >
+              <a href="full-scale-construction.html"
+                ><i class="fa-solid fa-helmet-safety" aria-hidden="true"></i
+                ><strong>Construction</strong
+                ><small>Residential and commercial projects</small></a
+              >
+              <a href="auto-shop.html"
+                ><i
+                  class="fa-solid fa-screwdriver-wrench"
+                  aria-hidden="true"
+                ></i
+                ><strong>Auto shop</strong
+                ><small>Maintenance, diagnostics and repairs</small></a
+              >
+              <a href="it-solutions.html"
+                ><i class="fa-solid fa-code" aria-hidden="true"></i
+                ><strong>IT solutions</strong
+                ><small>Systems, apps, websites and support</small></a
+              >
+            </div>
+          </div>
+          <a class="nav-link" href="about.html">About</a
+          ><a class="nav-link" href="faq.html">FAQ</a
+          ><a class="nav-link" href="contact.html">Contact</a>
+          <a class="btn btn-dark nav-cta" href="contact.html#inquiry"
+            >Request a quote
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+          ></a>
+        </nav>
+      </div>
     </header>
 
-    <section class="hero">
-        <div class="container">
-            <h2>Your Partner in Building, Mobility, and Innovation</h2>
-            <p class="hero-subtext">
-                At Chomene Investment Limited, we offer a robust suite of services spanning <strong>construction materials supply, expert vehicle repairs, and cutting-edge IT solutions.</strong> We are committed to delivering excellence and reliability across all our ventures, ensuring your projects and assets are in capable hands.
+    <main id="main-content">
+      <section class="home-hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow eyebrow-light"
+              >Built for real-world progress</span
+            >
+            <h1>One capable partner. <span>Four ways forward.</span></h1>
+            <p class="lead">
+              From the materials beneath a new build to the technology behind a
+              growing business, Chomene brings practical support across
+              construction, mobility and IT.
             </p>
-            <a href="services.html" class="btn-primary" aria-label="Explore our services">Explore Our Services</a>
-        </div>
-    </section>
-
-    <section class="features container" aria-label="Our main service offerings">
-        <h2>Our Core Services</h2>
-        <div class="features-grid">
-            <article class="feature-box" tabindex="0" aria-labelledby="construction-title" aria-describedby="construction-desc">
-                <i class="fa-solid fa-hard-hat feature-icon" aria-hidden="true"></i>
-                <h3 id="construction-title">Construction Materials Supply</h3>
-                <p id="construction-desc">
-                    We provide a comprehensive range of <strong>high-quality, certified construction materials</strong>, including cement, steel, aggregates, and more. Our supplies are sourced to meet rigorous industry standards, ensuring the durability and integrity of your building projects from residential to commercial scale.
-                </p>
-                <img src="https://images.unsplash.com/photo-1560435650-7ec2e17ba926?auto=format&fit=crop&w=320&q=80" alt="Construction site with materials and workers" loading="lazy" />
-            </article>
-
-            <article class="feature-box" tabindex="0" aria-labelledby="vehicle-title" aria-describedby="vehicle-desc">
-                <i class="fa-solid fa-car-side feature-icon" aria-hidden="true"></i>
-                <h3 id="vehicle-title">Vehicle Repairs & Maintenance</h3>
-                <p id="vehicle-desc">
-                    Our dedicated team of <strong>certified mechanics</strong> offers comprehensive vehicle diagnostic, repair, and scheduled maintenance services. From routine servicing to complex engine overhauls, we ensure your vehicles run safely, efficiently, and reliably, minimizing downtime and maximizing performance.
-                </p>
-                <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=320&q=80" alt="Mechanic repairing a car engine" loading="lazy" />
-            </article>
-
-            <article class="feature-box" tabindex="0" aria-labelledby="it-title" aria-describedby="it-desc">
-                <i class="fa-solid fa-laptop-code feature-icon" aria-hidden="true"></i>
-                <h3 id="it-title">IT Solutions & Consulting</h3>
-                <p id="it-desc">
-                    Empower your business with our cutting-edge <strong>IT solutions</strong>. We specialize in professional web development, robust network installation, and strategic IT consulting. Whether you need a new digital presence, secure infrastructure, or expert tech guidance, we tailor solutions to your specific needs.
-                </p>
-                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=320&q=80" alt="Person coding on a laptop with multiple screens" loading="lazy" />
-            </article>
-        </div>
-    </section>
-
-    <section class="value-propositions" aria-label="What sets us apart">
-        <div class="container">
-            <h2>What Sets Us Apart?</h2>
-            <div class="value-grid">
-                <div class="value-item">
-                    <i class="fa-solid fa-handshake feature-icon" aria-hidden="true"></i>
-                    <h3>Commitment to Quality</h3>
-                    <p>We are unwavering in our dedication to providing top-tier products and services. Every project, every repair, every consultation is handled with precision and a commitment to exceeding expectations.</p>
-                </div>
-                <div class="value-item">
-                    <i class="fa-solid fa-lightbulb feature-icon" aria-hidden="true"></i>
-                    <h3>Innovative Solutions</h3>
-                    <p>Staying ahead of the curve is in our DNA. We continuously adopt new technologies and methodologies to offer the most efficient and effective solutions in construction, auto care, and IT.</p>
-                </div>
-                <div class="value-item">
-                    <i class="fa-solid fa-users-gear feature-icon" aria-hidden="true"></i>
-                    <h3>Experienced Professionals</h3>
-                    <p>Our team comprises highly skilled and experienced experts in each field. Their collective knowledge ensures that you receive the best advice, craftsmanship, and support available.</p>
-                </div>
-                <div class="value-item">
-                    <i class="fa-solid fa-dollar-sign feature-icon" aria-hidden="true"></i>
-                    <h3>Client-Centric Approach</h3>
-                    <p>Your satisfaction is our priority. We listen to your needs, offer transparent communication, and tailor our services to provide personalized solutions that deliver true value.</p>
-                </div>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="services.html"
+                >Explore our services
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a
+              ><a class="btn btn-light" href="contact.html#inquiry"
+                >Discuss your project</a
+              >
             </div>
+            <p class="hero-note">
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i> Based
+              in Lusaka, serving clients across Zambia
+            </p>
+          </div>
+          <div class="hero-visual">
+            <img
+              class="hero-image"
+              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1100&q=85"
+              alt="Construction professionals working together on site"
+            />
+            <div class="hero-float-card">
+              <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+              <div>
+                <strong>Connected expertise</strong
+                ><span>Build, maintain and modernise with one team</span>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section class="about-preview container" aria-label="Learn more about Chomene Investment Limited">
-        <div class="content">
-            <h2>Why Choose Chomene Investment Limited?</h2>
+      <section class="trust-strip" aria-label="Business strengths">
+        <div class="container trust-grid">
+          <div class="trust-item">Solutions that move work forward</div>
+          <div class="trust-item">
+            <i class="fa-solid fa-compass-drafting" aria-hidden="true"></i>
+            <div>
+              <strong>Clear scope</strong
+              ><span>Start with the right requirements</span>
+            </div>
+          </div>
+          <div class="trust-item">
+            <i class="fa-solid fa-people-group" aria-hidden="true"></i>
+            <div>
+              <strong>Direct support</strong
+              ><span>Talk to the people handling the work</span>
+            </div>
+          </div>
+          <div class="trust-item">
+            <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+            <div>
+              <strong>Practical delivery</strong
+              ><span>Solutions designed around your needs</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="services-heading">
+        <div class="container">
+          <div class="section-header reveal">
+            <div>
+              <span class="eyebrow">What we do</span>
+              <h2 id="services-heading">
+                Support for what you build, drive and run.
+              </h2>
+            </div>
+            <div>
+              <p>
+                Choose a service below to see capabilities, typical requests and
+                the next step for your enquiry.
+              </p>
+              <a class="text-link" href="services.html"
+                >View all services
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+          <div class="service-grid">
+            <article class="service-card reveal">
+              <div class="service-card-content">
+                <span class="card-number">01 / SUPPLY</span>
+                <h3>Construction materials</h3>
+                <p>
+                  Source core building inputs including cement, aggregates,
+                  steel, timber and finishing materials.
+                </p>
+                <a class="text-link" href="construction-materials.html"
+                  >Explore materials
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+                ></a>
+              </div>
+              <img
+                src="https://images.unsplash.com/photo-1560435650-7ec2e17ba926?auto=format&fit=crop&w=700&q=80"
+                alt="Construction materials at an active building site"
+                loading="lazy"
+              />
+            </article>
+            <article class="service-card reveal">
+              <div class="service-card-content">
+                <span class="card-number">02 / BUILD</span>
+                <h3>Full-scale construction</h3>
+                <p>
+                  Coordinate residential, commercial and project-management
+                  needs from early planning through delivery.
+                </p>
+                <a class="text-link" href="full-scale-construction.html"
+                  >Explore construction
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+                ></a>
+              </div>
+              <img
+                src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=700&q=80"
+                alt="Architectural plans on a construction project"
+                loading="lazy"
+              />
+            </article>
+            <article class="service-card reveal">
+              <div class="service-card-content">
+                <span class="card-number">03 / MAINTAIN</span>
+                <h3>Auto shop services</h3>
+                <p>
+                  Keep personal vehicles and working fleets moving with
+                  maintenance, diagnostics and repair support.
+                </p>
+                <a class="text-link" href="auto-shop.html"
+                  >Explore vehicle care
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+                ></a>
+              </div>
+              <img
+                src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=700&q=80"
+                alt="Mechanic servicing a vehicle in a workshop"
+                loading="lazy"
+              />
+            </article>
+            <article class="service-card reveal">
+              <div class="service-card-content">
+                <span class="card-number">04 / MODERNISE</span>
+                <h3>IT solutions</h3>
+                <p>
+                  Build business systems, mobile and web apps, and websites,
+                  with infrastructure and technical support around them.
+                </p>
+                <a class="text-link" href="it-solutions.html"
+                  >Explore technology
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+                ></a>
+              </div>
+              <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=700&q=80"
+                alt="Developer working at a computer workstation"
+                loading="lazy"
+              />
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tint">
+        <div class="container split-layout">
+          <div class="split-visual reveal">
+            <img
+              src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1000&q=85"
+              alt="Business partners discussing a project"
+              loading="lazy"
+            />
+          </div>
+          <div class="split-copy reveal">
+            <span class="eyebrow">Why Chomene</span>
+            <h2>Different disciplines. One accountable conversation.</h2>
+            <p class="lead">
+              Complex work becomes easier when the handoffs are clear. We begin
+              with the need, define the right service path and keep
+              communication practical.
+            </p>
+            <ul class="check-list">
+              <li>
+                <i class="fa-solid fa-check" aria-hidden="true"></i
+                ><span
+                  ><strong>Start with context.</strong> Tell us what you are
+                  trying to achieve, not just what you need to buy.</span
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-check" aria-hidden="true"></i
+                ><span
+                  ><strong>Get a focused response.</strong> Your enquiry is
+                  routed to the relevant service area.</span
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-check" aria-hidden="true"></i
+                ><span
+                  ><strong>Keep the next step clear.</strong> Scope, timing and
+                  requirements are discussed before work begins.</span
+                >
+              </li>
+            </ul>
+            <a class="btn btn-outline mt-lg" href="about.html">How we work</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="process-heading">
+        <div class="container">
+          <div class="section-header reveal">
+            <div>
+              <span class="eyebrow">A simple start</span>
+              <h2 id="process-heading">From enquiry to action.</h2>
+            </div>
             <p>
-                Choosing Chomene Investment Limited means partnering with a company that values integrity, innovation, and client success. We bring versatile expertise and reliable service, all under one roof, to fulfill your varied needs. Discover how our integrated approach can simplify your projects and elevate your outcomes.
+              Every service is different, but getting started should never feel
+              complicated.
             </p>
-            <a href="about.html" class="btn-secondary" aria-label="Learn more about Chomene Investment Limited">Learn More About Us</a>
+          </div>
+          <div class="process-grid">
+            <article class="process-step reveal">
+              <h3>Share the requirement</h3>
+              <p>
+                Choose the relevant service and tell us the outcome, location
+                and timing you have in mind.
+              </p>
+            </article>
+            <article class="process-step reveal">
+              <h3>Review the scope</h3>
+              <p>
+                We clarify the details, identify what is needed and discuss an
+                appropriate way forward.
+              </p>
+            </article>
+            <article class="process-step reveal">
+              <h3>Agree the next step</h3>
+              <p>
+                Once the scope is understood, the team can confirm the practical
+                next action for your request.
+              </p>
+            </article>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <footer>
-        <div class="container footer-container">
-            <div class="footer-nav">
-                <a href="index.html">Home</a>
-                <a href="services.html">Services</a>
-                <a href="about.html">About Us</a>
-                <a href="contact.html">Contact</a>
-                <a href="#">Privacy Policy</a>
+      <section class="section section-dark">
+        <div class="container">
+          <div class="section-header reveal">
+            <div>
+              <span class="eyebrow eyebrow-light">Our working principles</span>
+              <h2 class="heading-inverse">
+                Useful solutions, handled with care.
+              </h2>
             </div>
-            <div class="social-links">
-                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            </div>
-            <p>&copy; 2025 Chomene Investment Limited. All rights reserved.</p>
+          </div>
+          <div class="value-grid">
+            <article class="value-item reveal">
+              <i class="fa-solid fa-eye" aria-hidden="true"></i>
+              <h3>Clarity</h3>
+              <p>
+                Plain communication about the requirement, the process and what
+                comes next.
+              </p>
+            </article>
+            <article class="value-item reveal">
+              <i class="fa-solid fa-scale-balanced" aria-hidden="true"></i>
+              <h3>Integrity</h3>
+              <p>
+                Responsible recommendations shaped by the actual job in front of
+                us.
+              </p>
+            </article>
+            <article class="value-item reveal">
+              <i class="fa-solid fa-gears" aria-hidden="true"></i>
+              <h3>Practicality</h3>
+              <p>Approaches designed to work in real operating conditions.</p>
+            </article>
+            <article class="value-item reveal">
+              <i class="fa-solid fa-handshake-angle" aria-hidden="true"></i>
+              <h3>Partnership</h3>
+              <p>
+                A collaborative relationship built around the client's intended
+                outcome.
+              </p>
+            </article>
+          </div>
         </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="cta-band reveal">
+            <div>
+              <span class="eyebrow eyebrow-light">Have a project in mind?</span>
+              <h2>Tell us what needs to move forward.</h2>
+              <p>
+                Use the enquiry form to select a service and give us the
+                essentials. We will have the right team review it.
+              </p>
+            </div>
+            <div class="hero-actions">
+              <a class="btn btn-light" href="contact.html#inquiry"
+                >Start an enquiry
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a
+              ><a class="btn btn-ghost" href="tel:+260976898797">Call us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="brand" href="index.html"
+              ><img src="images/logo.jpg" alt="" /><span class="brand-copy"
+                ><span class="brand-name">Chomene</span
+                ><span class="brand-type">Investment Limited</span></span
+              ></a
+            >
+            <p>
+              Construction, automotive and technology support for businesses,
+              projects and communities in Zambia.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h2>Company</h2>
+            <ul>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="faq.html">Questions</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h2>Services</h2>
+            <ul>
+              <li>
+                <a href="construction-materials.html">Materials supply</a>
+              </li>
+              <li><a href="full-scale-construction.html">Construction</a></li>
+              <li><a href="auto-shop.html">Auto shop</a></li>
+              <li><a href="it-solutions.html">IT solutions</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h2>Get in touch</h2>
+            <ul>
+              <li>
+                <a href="tel:+260976898797">+260&nbsp;976&nbsp;898&nbsp;797</a>
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/260976898797"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >WhatsApp us</a
+                >
+              </li>
+              <li>
+                <a href="mailto:isaacians36@gmail.com">isaacians36@gmail.com</a>
+              </li>
+              <li>Lusaka, Zambia</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span
+            >© <span data-current-year>2026</span> Chomene Investment
+            Limited.</span
+          >
+          <div class="footer-bottom-links">
+            <a href="privacy-policy.html">Privacy policy</a
+            ><a href="terms.html">Terms</a><a href="sitemap.xml">Sitemap</a>
+          </div>
+        </div>
+      </div>
     </footer>
-
     <script src="script.js" defer></script>
-</body>
+  </body>
 </html>

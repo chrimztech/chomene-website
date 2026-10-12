@@ -1,135 +1,527 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modern IT Solutions - Chomene Investment Limited</title>
-    <meta name="description" content="Modern IT solutions from Chomene Investment Limited — custom software, web development, network infrastructure, and technical support." />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Systems, Apps, Websites &amp; IT Solutions | Chomene</title>
+    <meta
+      name="description"
+      content="Explore systems development, mobile apps, web applications, websites, networks, hardware and IT support from Chomene Investment Limited."
+    />
     <link rel="canonical" href="https://www.chomene.com/it-solutions.html" />
+    <meta name="theme-color" content="#07171a" />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Chomene Investment Limited" />
-    <meta property="og:title" content="Modern IT Solutions - Chomene Investment Limited" />
-    <meta property="og:description" content="Custom software, web development, network infrastructure, and technical support." />
-    <meta property="og:url" content="https://www.chomene.com/it-solutions.html" />
-    <meta property="og:image" content="https://www.chomene.com/images/logo.jpg" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Modern IT Solutions - Chomene Investment Limited" />
-    <meta name="twitter:description" content="Custom software, web development, network infrastructure, and technical support." />
-    <meta name="twitter:image" content="https://www.chomene.com/images/logo.jpg" />
-    <meta name="theme-color" content="#003366" />
+    <meta
+      property="og:title"
+      content="Systems, Apps, Websites &amp; IT Solutions | Chomene"
+    />
+    <meta
+      property="og:description"
+      content="From business systems and mobile apps to websites, infrastructure and support."
+    />
+    <meta
+      property="og:image"
+      content="https://www.chomene.com/images/logo.jpg"
+    />
     <link rel="icon" href="images/logo.jpg" type="image/jpeg" />
-    <link rel="apple-touch-icon" href="images/logo.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-</head>
-<body>
-    <header class="main-header">
-        <div class="container header-container">
-            <div class="logo-container">
-                <a href="index.html" class="logo" aria-label="Chomene Investment Limited Home">
-                    <img src="images/logo.jpg" alt="Chomene Investment Limited Logo" />
-                    Chomene Investment Limited
-                </a>
-            </div>
-            <button id="menu-toggle" class="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="services.html">Services</a>
-                <a href="about.html">About Us</a>
-                <a href="contact.html">Contact</a>
-            </nav>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <span>Zambian expertise across essential industries</span>
+        <div class="topbar-links">
+          <a href="tel:+260976898797"
+            ><i class="fa-solid fa-phone" aria-hidden="true"></i>
+            +260&nbsp;976&nbsp;898&nbsp;797</a
+          ><a
+            href="https://wa.me/260976898797"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            WhatsApp</a
+          ><a href="mailto:isaacians36@gmail.com"
+            ><i class="fa-regular fa-envelope" aria-hidden="true"></i> Email
+            us</a
+          >
         </div>
+      </div>
+    </div>
+    <header class="main-header">
+      <div class="container header-inner">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="Chomene Investment Limited home"
+          ><img src="images/logo.jpg" alt="" /><span class="brand-copy"
+            ><span class="brand-name">Chomene</span
+            ><span class="brand-type">Investment Limited</span></span
+          ></a
+        ><button
+          class="menu-toggle"
+          type="button"
+          data-menu-toggle
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+          aria-label="Open navigation menu"
+        >
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+        <nav
+          class="site-nav"
+          id="primary-navigation"
+          aria-label="Primary navigation"
+        >
+          <a class="nav-link" href="index.html">Home</a>
+          <div class="nav-item">
+            <a class="nav-main-link active" href="services.html">Services</a
+            ><button
+              class="submenu-toggle"
+              type="button"
+              data-submenu-toggle
+              aria-expanded="false"
+              aria-controls="services-menu"
+              aria-label="Show service pages"
+            >
+              <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="submenu" id="services-menu">
+              <a href="construction-materials.html"
+                ><i class="fa-solid fa-cubes-stacked" aria-hidden="true"></i
+                ><strong>Materials supply</strong
+                ><small>Cement, steel, aggregates and more</small></a
+              ><a href="full-scale-construction.html"
+                ><i class="fa-solid fa-helmet-safety" aria-hidden="true"></i
+                ><strong>Construction</strong
+                ><small>Residential and commercial projects</small></a
+              ><a href="auto-shop.html"
+                ><i
+                  class="fa-solid fa-screwdriver-wrench"
+                  aria-hidden="true"
+                ></i
+                ><strong>Auto shop</strong
+                ><small>Maintenance, diagnostics and repairs</small></a
+              ><a class="active" href="it-solutions.html"
+                ><i class="fa-solid fa-code" aria-hidden="true"></i
+                ><strong>IT solutions</strong
+                ><small>Systems, apps, websites and support</small></a
+              >
+            </div>
+          </div>
+          <a class="nav-link" href="about.html">About</a
+          ><a class="nav-link" href="faq.html">FAQ</a
+          ><a class="nav-link" href="contact.html">Contact</a
+          ><a
+            class="btn btn-dark nav-cta"
+            href="contact.html?service=it-solutions#inquiry"
+            >Request a consultation
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+          ></a>
+        </nav>
+      </div>
     </header>
 
-    <main class="container">
-        <section class="service-detail-section">
-            <h1>Modern IT Solutions</h1>
-            <p class="intro-text">
-                In today's digital age, robust and efficient IT infrastructure is crucial for business success. Chomene Investment Limited provides <strong>cutting-edge IT solutions</strong> designed to empower your business, streamline operations, and enhance your digital presence. We offer a comprehensive suite of services, from <strong>software development and system maintenance to hardware repairs and data recovery</strong>.
+    <main id="main-content">
+      <section class="page-hero">
+        <div class="container">
+          <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="index.html">Home</a
+            ><i class="fa-solid fa-chevron-right" aria-hidden="true"></i
+            ><a href="services.html">Services</a
+            ><i class="fa-solid fa-chevron-right" aria-hidden="true"></i
+            ><span aria-current="page">IT solutions</span>
+          </nav>
+          <span class="eyebrow eyebrow-light">Technology</span>
+          <h1>Digital systems built for the way you work.</h1>
+          <p class="lead">
+            Plan a business system, launch a mobile app, build a web platform or
+            refresh your website. Chomene can also help with the infrastructure
+            and support around it.
+          </p>
+        </div>
+      </section>
+
+      <nav class="it-page-nav" aria-label="IT solution categories">
+        <div class="container it-page-nav-inner">
+          <a href="#systems-development">Systems</a>
+          <a href="#mobile-apps">Mobile apps</a>
+          <a href="#web-apps">Web apps</a>
+          <a href="#websites">Websites</a>
+          <a href="#it-support">Support</a>
+        </div>
+      </nav>
+
+      <section class="section">
+        <div class="container detail-intro-grid">
+          <div class="reveal">
+            <span class="eyebrow">From idea to operation</span>
+            <h2>Start with the job the technology needs to do.</h2>
+            <p class="lead">
+              A useful solution starts with its users, workflows and goals. That
+              context helps define the right product, platform and level of
+              support.
             </p>
-
-            <div class="detail-content">
-                <div class="detail-block">
-                    <div class="detail-block-text">
-                        <h3>Custom Software & App Development</h3>
-                        <p>We build tailor-made software solutions and mobile applications to address your unique business challenges and opportunities. Our development process focuses on <strong>functionality, scalability, and user experience</strong>.</p>
-                        <ul>
-                            <li><strong>Custom Software Development:</strong> Solutions designed specifically for your business processes.</li>
-                            <li><strong>Web Application Development:</strong> Powerful, browser-based tools and platforms.</li>
-                            <li><strong>Mobile App Development:</strong> Native iOS and Android applications for wider reach.</li>
-                            <li><strong>Systems Development:</strong> Creating complex integrated systems.</li>
-                            <li><strong>UI/UX Design:</strong> Intuitive and engaging user interfaces.</li>
-                        </ul>
-                    </div>
-                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&h=400&q=80" alt="Software development code on multiple screens" loading="lazy" />
-                </div>
-
-                <div class="detail-block">
-                    <div class="detail-block-text">
-                        <h3>IT Infrastructure & Support</h3>
-                        <p>Ensure your IT systems are always running optimally with our comprehensive infrastructure solutions and reliable support services. We provide everything from <strong>network setup to advanced software installations and ongoing maintenance</strong>.</p>
-                        <ul>
-                            <li><strong>Network Design & Installation:</strong> Secure wired and wireless network solutions.</li>
-                            <li><strong>Advanced Software Installation:</strong> Expert setup and configuration of complex software.</li>
-                            <li><strong>System Maintenance & Updates:</strong> Keeping your software and systems current and secure.</li>
-                            <li><strong>IT Consultancy & Strategy:</strong> Expert advice for your technology roadmap.</li>
-                            <li><strong>Ongoing Technical Support:</strong> Timely and proactive assistance for all IT needs.</li>
-                        </ul>
-                    </div>
-                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&h=400&q=80" alt="Server room with network equipment" loading="lazy" />
-                </div>
-
-                <div class="detail-block">
-                    <div class="detail-block-text">
-                        <h3>Hardware Solutions & Data Management</h3>
-                        <p>From <strong>repairing crucial hardware to recovering lost data and supplying essential IT accessories</strong>, we ensure your physical IT assets and digital information are protected and functional.</p>
-                        <ul>
-                            <li><strong>Hardware Repairs & Upgrades:</strong> Diagnostics and repair of computers, servers, and peripherals.</li>
-                            <li><strong>Data Recovery Services:</strong> Retrieving lost or corrupted data from various storage devices.</li>
-                            <li><strong>IT Accessories & Supplies:</strong> Sourcing and providing quality IT components and peripherals.</li>
-                            <li><strong>Software Testing & Quality Assurance:</strong> Ensuring your applications are robust and bug-free.</li>
-                            <li><strong>Data Backup Solutions:</strong> Implementing reliable strategies to prevent data loss.</li>
-                        </ul>
-                    </div>
-                    <img src="https://images.unsplash.com/photo-1604754742629-3e5728249d73?auto=format&fit=crop&w=600&h=400&q=80" alt="Person repairing computer hardware" loading="lazy" />
-                </div>
+            <p class="muted">
+              The services below show the types of work you can discuss with us.
+              Features, technologies, integrations and delivery scope are agreed
+              for each project.
+            </p>
+            <div class="detail-list">
+              <div class="detail-pill">
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>Business
+                systems
+              </div>
+              <div class="detail-pill">
+                <i class="fa-solid fa-mobile-screen" aria-hidden="true"></i
+                >Mobile applications
+              </div>
+              <div class="detail-pill">
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i
+                >Web apps and websites
+              </div>
+              <div class="detail-pill">
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i
+                >Infrastructure and support
+              </div>
             </div>
+          </div>
+          <img
+            class="detail-image reveal"
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1100&q=85"
+            alt="Developer working on a web application at a computer"
+          />
+        </div>
+      </section>
 
-            <div class="cta-section">
-                <h2>Ready to Elevate Your IT Capabilities?</h2>
-                <p>
-                    Whether you need custom software, reliable support, or expert hardware solutions, Chomene Investment Limited is your dedicated IT partner.
-                </p>
-                <a href="contact.html" class="btn-contact">Get an IT Consultation</a>
+      <section class="section section-tint">
+        <div class="container">
+          <div class="section-header reveal">
+            <div>
+              <span class="eyebrow">Digital products</span>
+              <h2>What we can build together.</h2>
             </div>
-        </section>
+            <p>
+              From an internal tool to a customer-facing experience, choose the
+              starting point that fits your idea. Each project is scoped around
+              your users, priorities and budget.
+            </p>
+          </div>
+          <div class="it-solution-grid">
+            <article class="it-solution-card reveal" id="systems-development">
+              <div class="it-solution-card-top">
+                <span class="it-solution-icon"
+                  ><i class="fa-solid fa-gears" aria-hidden="true"></i
+                ></span>
+                <span class="it-solution-number">01 / OPERATIONS</span>
+              </div>
+              <h3>Systems development</h3>
+              <p>
+                Replace scattered spreadsheets and repetitive tasks with a
+                system designed around how your team actually works.
+              </p>
+              <ul>
+                <li>Business and operations management tools</li>
+                <li>Inventory, assets and record-keeping workflows</li>
+                <li>Approvals, reporting and dashboards</li>
+                <li>Role-based access and system integrations</li>
+              </ul>
+              <a
+                class="text-link"
+                href="contact.html?service=it-solutions&amp;focus=systems-development#inquiry"
+                >Discuss a system
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+              ></a>
+            </article>
+            <article class="it-solution-card reveal" id="mobile-apps">
+              <div class="it-solution-card-top">
+                <span class="it-solution-icon"
+                  ><i
+                    class="fa-solid fa-mobile-screen-button"
+                    aria-hidden="true"
+                  ></i
+                ></span>
+                <span class="it-solution-number">02 / ON THE MOVE</span>
+              </div>
+              <h3>Mobile applications</h3>
+              <p>
+                Put essential services and information in people's hands with an
+                app shaped for customers, staff or field teams.
+              </p>
+              <ul>
+                <li>Android and iOS app projects</li>
+                <li>Customer and employee experiences</li>
+                <li>Mobile forms and field workflows</li>
+                <li>Notifications, offline needs and release planning</li>
+              </ul>
+              <a
+                class="text-link"
+                href="contact.html?service=it-solutions&amp;focus=mobile-apps#inquiry"
+                >Discuss an app
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+              ></a>
+            </article>
+            <article class="it-solution-card reveal" id="web-apps">
+              <div class="it-solution-card-top">
+                <span class="it-solution-icon"
+                  ><i class="fa-solid fa-window-maximize" aria-hidden="true"></i
+                ></span>
+                <span class="it-solution-number">03 / IN THE BROWSER</span>
+              </div>
+              <h3>Web applications</h3>
+              <p>
+                Make processes accessible from a browser with a platform that
+                connects people, information and actions.
+              </p>
+              <ul>
+                <li>Client, supplier or employee portals</li>
+                <li>Bookings, requests and service workflows</li>
+                <li>Accounts, permissions and dashboards</li>
+                <li>API and data integration requirements</li>
+              </ul>
+              <a
+                class="text-link"
+                href="contact.html?service=it-solutions&amp;focus=web-apps#inquiry"
+                >Discuss a web app
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+              ></a>
+            </article>
+            <article class="it-solution-card reveal" id="websites">
+              <div class="it-solution-card-top">
+                <span class="it-solution-icon"
+                  ><i class="fa-solid fa-globe" aria-hidden="true"></i
+                ></span>
+                <span class="it-solution-number">04 / YOUR PRESENCE</span>
+              </div>
+              <h3>Websites</h3>
+              <p>
+                Give your business a clear, credible online home that helps
+                visitors find information and take the next step.
+              </p>
+              <ul>
+                <li>Business and corporate websites</li>
+                <li>Service, portfolio and product pages</li>
+                <li>Responsive, accessible page design</li>
+                <li>Content structure and search-ready foundations</li>
+              </ul>
+              <a
+                class="text-link"
+                href="contact.html?service=it-solutions&amp;focus=websites#inquiry"
+                >Discuss a website
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+              ></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="it-support">
+        <div class="container">
+          <div class="section-header reveal">
+            <div>
+              <span class="eyebrow">Beyond the build</span>
+              <h2>The work that makes technology useful.</h2>
+            </div>
+            <p>
+              A product needs thoughtful design, connected information and
+              dependable day-to-day technology around it.
+            </p>
+          </div>
+          <div class="offer-grid">
+            <article class="offer-card reveal">
+              <div class="icon-box">
+                <i class="fa-solid fa-pen-ruler" aria-hidden="true"></i>
+              </div>
+              <h3>Product design &amp; quality</h3>
+              <p>
+                Turn an idea into a clear experience before and during
+                development.
+              </p>
+              <ul>
+                <li>Requirements and workflow mapping</li>
+                <li>Interface and user-experience design</li>
+                <li>Testing and launch preparation</li>
+              </ul>
+            </article>
+            <article class="offer-card reveal">
+              <div class="icon-box">
+                <i class="fa-solid fa-link" aria-hidden="true"></i>
+              </div>
+              <h3>Data &amp; integration</h3>
+              <p>
+                Plan how information moves between people, tools and systems.
+              </p>
+              <ul>
+                <li>Data structure and migration planning</li>
+                <li>Connections to existing tools and APIs</li>
+                <li>Backup and recovery enquiries</li>
+              </ul>
+            </article>
+            <article class="offer-card reveal">
+              <div class="icon-box">
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+              </div>
+              <h3>Infrastructure &amp; support</h3>
+              <p>
+                Keep the devices, software and connections behind your work in
+                view.
+              </p>
+              <ul>
+                <li>Network setup and configuration</li>
+                <li>Software installation and maintenance</li>
+                <li>Computer, peripheral and upgrade requests</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tint">
+        <div class="container">
+          <div class="section-header reveal">
+            <div>
+              <span class="eyebrow">How a project begins</span>
+              <h2>From the first conversation to a useful launch.</h2>
+            </div>
+            <p>
+              The right scope depends on what you already have, who needs the
+              solution and what it must achieve.
+            </p>
+          </div>
+          <div class="process-grid it-process-grid">
+            <article class="process-step reveal">
+              <h3>Discover</h3>
+              <p>
+                Tell us about your users, current workflow, pain points and
+                desired outcome.
+              </p>
+            </article>
+            <article class="process-step reveal">
+              <h3>Define</h3>
+              <p>
+                Agree on priorities, essential features, constraints and a
+                practical project scope.
+              </p>
+            </article>
+            <article class="process-step reveal">
+              <h3>Build &amp; test</h3>
+              <p>
+                Review the design and implementation against real tasks before
+                launch.
+              </p>
+            </article>
+            <article class="process-step reveal">
+              <h3>Launch &amp; support</h3>
+              <p>
+                Prepare handover, training and ongoing assistance as required by
+                the project.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-tight">
+        <div class="container">
+          <div class="cta-band reveal">
+            <div>
+              <span class="eyebrow eyebrow-light">Have a project in mind?</span>
+              <h2>Let's make the next step clear.</h2>
+              <p>
+                Tell us what you need to build or improve. The enquiry form will
+                preselect IT solutions for you.
+              </p>
+            </div>
+            <div class="hero-actions">
+              <a
+                class="btn btn-light"
+                href="contact.html?service=it-solutions#inquiry"
+                >Request a consultation
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer>
-        <div class="container footer-container">
-            <div class="footer-nav">
-                <a href="index.html">Home</a>
-                <a href="services.html">Services</a>
-                <a href="about.html">About Us</a>
-                <a href="contact.html">Contact</a>
-                <a href="#">Privacy Policy</a>
-            </div>
-            <div class="social-links">
-                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            </div>
-            <p>&copy; 2025 Chomene Investment Limited. All rights reserved.</p>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="brand" href="index.html"
+              ><img src="images/logo.jpg" alt="" /><span class="brand-copy"
+                ><span class="brand-name">Chomene</span
+                ><span class="brand-type">Investment Limited</span></span
+              ></a
+            >
+            <p>
+              Construction, automotive and technology support for businesses,
+              projects and communities in Zambia.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h2>Company</h2>
+            <ul>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="faq.html">Questions</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h2>Services</h2>
+            <ul>
+              <li>
+                <a href="construction-materials.html">Materials supply</a>
+              </li>
+              <li><a href="full-scale-construction.html">Construction</a></li>
+              <li><a href="auto-shop.html">Auto shop</a></li>
+              <li><a href="it-solutions.html">IT solutions</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h2>Get in touch</h2>
+            <ul>
+              <li>
+                <a href="tel:+260976898797">+260&nbsp;976&nbsp;898&nbsp;797</a>
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/260976898797"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >WhatsApp us</a
+                >
+              </li>
+              <li>
+                <a href="mailto:isaacians36@gmail.com">isaacians36@gmail.com</a>
+              </li>
+              <li>Lusaka, Zambia</li>
+            </ul>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <span
+            >© <span data-current-year>2026</span> Chomene Investment
+            Limited.</span
+          >
+          <div class="footer-bottom-links">
+            <a href="privacy-policy.html">Privacy policy</a
+            ><a href="terms.html">Terms</a><a href="sitemap.xml">Sitemap</a>
+          </div>
+        </div>
+      </div>
     </footer>
-
     <script src="script.js" defer></script>
-</body>
+  </body>
 </html>
